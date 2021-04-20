@@ -22,12 +22,12 @@
             // 2. pass oin 1 param
             // 3. return hello + param
 
-            function sayHello(name) {
-                    return ("Hello " + name);
-
-            }
-
-            console.log(sayHello("Ricardo"));
+            // function sayHello(name) {
+            //         return ("Hello " + name);
+            //
+            // }
+            //
+            // console.log(sayHello("Ricardo"));
 
             /**
              * TODO:
@@ -36,8 +36,8 @@
              *
              * console.log 'helloMessage' to check your work
              */
-            var helloMessage = sayHello("Ricardo");
-            console.log(helloMessage);
+            // var helloMessage = sayHello("Ricardo");
+            // console.log(helloMessage);
 
             // 1. call sayHello
             // var helloMessage = sayHello( "Ricardo");
@@ -63,14 +63,14 @@
 //
 //         nameYourFunction(8, 2);
 
-            var myName = "Ricardo";
-            sayHello(myName)
-            console.log(sayHello(myName));
+            // var myName = "Ricardo";
+            // sayHello(myName)
+            // console.log(sayHello(myName));
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-            var random = Math.floor((Math.random() * 3) + 1);
+            // var random = Math.floor((Math.random() * 3) + 1);
 
             /**
              * TODO:
@@ -112,13 +112,13 @@
             //     }
             //     console.log(isTwo(random));
 
-            function isTwo(number) {
-                    if (number === 2) {
-                            return true;
-                    } else {
-                            return false;
-                    }
-                    console.log(isTwo(1));
+            // function isTwo(number) {
+            //         if (number === 2) {
+            //                 return true;
+            //         } else {
+            //                 return false;
+            //         }
+            //         console.log(isTwo(1));
 
                     /**
                      * TODO:
@@ -132,23 +132,37 @@
                      * > calculateTip(0.15, 33.42) // returns 5.013
                      */
 
-                        // write a function - calculate tip
-                        // function calculateTip(tip, billTotal){
-                        //      return tip * billTotal;
-                        //    }
-                        // console.log(calculateTip(0.20, 38.35).toFixed(2));
+                        //write a function - calculate tip
+                        function calculateTip(tip, billTotal){
+                             return tip * billTotal;
+                           }
+                        // console.log(calculateTip(0.20, 20).toFixed(2));
+                        // console.log(calculateTip (0.25 , 25.50).toFixed(2));
+                        // console.log(calculateTip (0.15 , 33.42).toFixed(2));
 
-                        // (function(){
-                    //          "use strict";
-                    //
-                    // }()
 
-                    /**
-                     * TODO:
-                     * Use prompt and alert in combination with your calculateTip function to
-                     * prompt the user for the bill total and a percentage they would like to tip,
-                     * then display the dollar amount they should tip
-                     */
+                /**
+                 * TODO:
+                 * Use prompt and alert in combination with your calculateTip function to
+                 * prompt the user for the bill total and a percentage they would like to tip,
+                 * then display the dollar amount they should tip
+                 */
+                        //     let billTotal = 20 || 25.50 || 33.42;
+                        //     let tip = 0.20 || 0.25 || 0.15;
+                        //
+                        // if (calculateTip (tip, billTotal)){
+                        //     return alert("Your total is " + "$" + billTotal)
+                        //     return prompt("Would you like to tip?")
+                        // }
+
+                                var tip = prompt( "What percentage is your tip?");
+                                var total= prompt ("What is your total bill?");
+
+                                console.log(typeof tip);
+
+                                console.log(calculateTip(tip, total));
+
+
 
                     /**
                      *
@@ -166,10 +180,27 @@
                      * > applyDiscount(45.99, 0.12) // 40.4712
                      */
 
+                                function applyDiscount(price, discount) {
+                                    return price - (price * discount);
+
+                                    var price = 100;
+                                    var discount = .2;
+                                 console.log(applyDiscount(price - discount));
+                    }
+
+                                function applyDiscount(originalPrice, discountPercent){
+                                    var discountAmount = originalPrice * discountPercent
+                                    return(originalPrice - discountAmount).toFixed(2);
+                                }
+
+                                    console.log(applyDiscount(69.99,0.1));
 
             }
 
-    }
-
-
 )()
+
+
+// (function(){
+//          "use strict";
+//
+// }()
