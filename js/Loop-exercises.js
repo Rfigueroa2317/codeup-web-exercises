@@ -62,3 +62,49 @@
         // while(myChoice != password){
         //     myChoice = prompt("Sorry, wrong password. Try again");
         // }
+
+
+    // var num = 2;
+    //
+    // function multiplyBy2(){
+    //
+    //     while(num <= 65536) {
+    //         console.log(num);
+    //         num *= 2;
+    //     }
+    // }
+    // multiplyBy2(num);
+
+
+// DO WHILE EXERCISE
+
+// This is how you get a random number between 50 and 100
+var allCones = Math.floor(Math.random() * 50) + 50;
+var wantedCones = getWantedCones();
+
+// function getWantedCones(){
+//     return Math.floor(Math.random() * 5) + 50;
+//}
+// This expression will generate a random number between 1 and 5
+function getWantedCones() {
+    return Math.floor(Math.random() * 5) + 1;
+}
+function sellIceCreamCones(conesToSell){
+
+}do{
+
+    // we do not have enough cones to sell, skip to next iteration
+    if (wantedCones > allCones){
+        console.log(`I'm sorry, you wanted ${wantedCones}, but we only have ${allCones}`)
+        continue;
+    }
+
+    console.log(`Here are ${wantedCones}. Enjoy!`);
+    // at this point, we have enough cones and should subtract wantedCones from allCones
+    allCones -= wantedCones;
+
+    console.log(`We have ${allCones} remaining`);
+
+}while(allCones > 0)
+
+console.log("We've sold out of cones for the day!");
