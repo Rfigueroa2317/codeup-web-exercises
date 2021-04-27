@@ -44,14 +44,14 @@
 
     //}
 
-    var myPets = ["Cat", "Noodles", "Nissan"];
-
-    // length = 3
-    // maxIndex = 2
-
-    for (let i = 0; i <myPets.length; i++){ // if i += 2 it would skip the second one. if i += 3 it would skip the third one...
-        console.log(myPets[i]); // 3
-    }
+    // var myPets = ["Cat", "Noodles", "Nissan"];
+    //
+    // // length = 3
+    // // maxIndex = 2
+    //
+    // for (let i = 0; i <myPets.length; i++){ // if i += 2 it would skip the second one. if i += 3 it would skip the third one...
+    //     console.log(myPets[i]); // 3
+    // }
 
     // TODO: MINI-EXERCISE
     //  -> Create an array with at least 5 elements, describing whatever you'd like!
@@ -62,17 +62,34 @@
     //      -> Try adding strings, numbers, or booleans as elements
     // ** MAKE SURE YOU DO THIS MINI EXERCISE ** //
 
-    myPets.forEach(function(pet ){ //callback – Function to execute on each element. It accepts between one and three arguments:
-        // do stuff
-        console.log("My pet's name is " + pet)
-    })
+    // myPets.forEach(function(pet ){ //callback – Function to execute on each element. It accepts between one and three arguments:
+    //     // do stuff
+    //     console.log("My pet's name is " + pet)
+    // })
 
 
 
 
+// sort method //
+
+    // function sortMyNums(num1, num2, num3){
+    //     var numArray = [num1, num2, num3];
+    //     //console.log(numArray);
+    //     numArray.sort(function(a, b, ){
+    //         console.log(a);
+    //         console.log(b);
+    //         console.log(a - b);
+    //         return a - b; // if it were b - a it will show reversed in the console
+    //     });
+    //     console.log(numArray);
+    //     return numArray;
+    // }
+    // //console.log(numArray);
+    // sortMyNums(13, 1, 1009)
 
 
 
+    function giveMissyJustice(notASuspectString)
 
 
 })()

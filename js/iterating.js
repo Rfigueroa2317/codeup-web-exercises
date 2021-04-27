@@ -14,7 +14,7 @@
      * array.
      */
 
-        console.log(names[0, 1, 2, 3]);
+        console.log(names.length);
 
 
     /**
@@ -22,10 +22,16 @@
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
+        // ** actual answer ** //
+        console.log(names[0])
+        console.log(names[1])
+        console.log(names[2])
+        console.log(names[3])
 
-        names.forEach(function(names ) {
-        console.log("Their names are: " + names)
-        })
+        // ** My answer ** //
+        // names.forEach(function(names ) {
+        // console.log("Their names are: " + names)
+        // })
 
     /**
      * TODO:
@@ -33,9 +39,9 @@
      * array.
      */
 
-        for (let i = 0; i < names.length; i++){
-        console.log(names[i]);
-        }
+        // for (var i = 0; i < names.length; i++){
+        // console.log(names[i]);
+        // }
 
 
     /**
@@ -44,11 +50,10 @@
      */
 
 
-    for (let i = 0; i < names.length; i++){
-        names.forEach(function(names ) {
+        //for (let i = 0; i < names.length; i++){
+        names.forEach(function(name ){
+        console.log("Their names are: " + name)
         })
-        console.log("Their names are: " + names)
-    }
 
 
     /**
@@ -65,8 +70,17 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-        function first(arr)
+        function first(arr){
+            return arr [0];
+        }
+        function second(arr){
+            return arr [1];
+        }
+        function last(arr){
+            return arr [3]
+        }
 
+        console.log(`The first element is: ${first(names)}, The second is: ${second(names)}, and the last is ${last(names)}`)
 
 
 

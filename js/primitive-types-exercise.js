@@ -33,7 +33,11 @@ console.log(typeof 'true');
 // string
 
 
+<<<<<<< HEAD
 // What data type would best represent:
+=======
+/ What data type would best represent:
+>>>>>>> 16376545eea41ae0b3e52b5ae44ba44cce5ee639
 
 // . A term of phrase type into a search box?
 
