@@ -89,7 +89,9 @@
 
 
 
-    function giveMissyJustice(notASuspectString)
+    function giveMissyJustice(notASuspectString){
+
+    }
 
 
 })()

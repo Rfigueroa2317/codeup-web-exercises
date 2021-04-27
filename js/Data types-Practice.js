@@ -81,8 +81,8 @@
 // 4. Use the following code to follow the instructions below:
 //
 //
-var username = 'codeup';
-var password = 'notastrongpassword';
+// var username = 'codeup';
+// var password = 'notastrongpassword';
 // Create a variable that holds a boolean value for each of the following conditions:
 //
 // the password must be at least 5 characters
@@ -90,4 +90,6 @@ var password = 'notastrongpassword';
 // the username must be no more than 20 characters
 // neither the username or password can start or end with whitespace
 
-        var login = username+password;
+        //var login = username+password;
+
+

@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; // ***Notes and function practice***
 
 
 function isBoolean(input) {
@@ -13,7 +13,7 @@ var tip = 0.20 || 0.25 || 0.15;
 if (calculateTip (tip, billTotal)){
     var prompt=("how much do you want to tip?, ")
     prompt("Would you like to tip?")
-} else if (){
+} else{
 
 }
 
