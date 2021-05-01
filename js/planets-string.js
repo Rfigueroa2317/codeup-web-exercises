@@ -19,11 +19,12 @@
      * results. Why might this be useful?
      */
 
-        var str = "Mercury<br>" +
-        "Venus<br>" +
-        "Earth<br></br>Mars<br></br>Jupiter<br></br>Saturn<br></br>Uranus<br></br>Neptune"
-        console.log(str)
+        var str = "Mercury\nVenus\nEarth\nMars\nJupiter\nSaturn\nUranus\nNeptune"
+            console.log(str);
 
+            // The <br> line is an HTML element which produces a line break, making
+            //  the lines easier to read. You cannot use them in JS. You can however,
+            //  use '\n' to create a similar effect in JS.
 
      /**
       BONUS:
