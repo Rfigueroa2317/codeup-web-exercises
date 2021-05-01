@@ -91,14 +91,55 @@
 
     // Example of "this":
 
-    var car = {};
-    car.make = "Toyota";
-    car.model = "Camry";
+    // var car = {};
+    // car.make = "Toyota";
+    // car.model = "Camry";
+    //
+    // // create a logMakeModel on the car object
+    // car.logMakeModel = function () {
+    //     console.log("Car make/model is:" + this.make + " " + this.model);
+    // };
+    // // log the make/model
+    // car.logMakeModel();
 
-    // create a logMakeModel on the car object
-    car.logMakeModel = function () {
-        console.log("Car make/model is:" + this.make + " " + this.model);
-    };
-    // log the make/model
-    car.logMakeModel();
-
+var theSpurs = {
+    city: "SA",
+    coach: 'gregg',
+    wins: 5,
+    players: ["one", "two", "tim duncan", "manu", "david robinson"],
+    playerInfo: [
+        {
+            name: "Tim",
+            age: 40,
+            mvp: 3
+        },
+        {
+            name: "manu",
+            age: 38,
+            mvp: 6
+        }
+    ],
+    otherNBATeams: {
+        Jazz: {
+            city: "Salt Lake City",
+            mascot: "Jazz Bear",
+            champsWon: 0
+        },
+        Mavs: {
+            city: "Dallas",
+            mascot: "MavsMan & Champ",
+            champsWon: 1
+        },
+        Pistons: {
+            city: "Detroit",
+            mascot: "Hooper the Horse",
+            champsWon: 3
+        }
+    }
+}
+console.log(theSpurs.otherNBATeams.Mavs);
+// console.log(theSpurs.playerInfo[0].age);
+// console.log(theSpurs);
+// TODO: using above nested object, log the mascot of the "otherNBATeams", change "manu's" name
+//  from "manu" to "Ginobli", print out the 3rd element in the 'players' array, add another
+//  'otherNBATeam' team object.

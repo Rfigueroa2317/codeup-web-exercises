@@ -1,4 +1,4 @@
-(function (){      //4/26//2021
+//4/26//2021
     "use strict";
 
     var planets = [
@@ -35,9 +35,12 @@
     console.log(a);
 
     console.log("Reversing the order of the planets array.");
+    planets.reverse()
     console.log(planets);
+
 
     console.log("Sorting the planets array.");
+    planets.sort()
     console.log(planets);
 
 
@@ -63,4 +66,3 @@
 
 
 
-})
