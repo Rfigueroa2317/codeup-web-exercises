@@ -43,26 +43,16 @@
 // * number)
 // */
 
-    var num = Math.random(num);
-    function isTwo(num){
-        if (num === 2) {
-            return true;
-        }else if (num === 1 || 3){
-            return false;
-        }
-
-    }
-console.log(isTwo())
-
-
-
-
-
-
-
-
-
-
+//     var num = Math.random(num);
+//     function isTwo(num){
+//         if (num === 2) {
+//             return true;
+//         }else if (num === 1 || 3){
+//             return false;
+//         }
+//
+//     }
+// console.log(isTwo())
 
 
 
