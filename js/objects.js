@@ -12,6 +12,12 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
+            var person = {
+                firstName: 'Ricardo',
+                lastName:  'Figueroa',
+            }
+
+
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -21,6 +27,12 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+
+            person.sayHello = function (){
+                return "Hello from Ricardo Figueroa!";
+            }
+
+
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -36,11 +48,18 @@
      * and console.log the relevant messages for each person
      */
 
+    //---------Ask for help to finish it----------\\
     // var shoppers = [
     //     {name: 'Cameron', amount: 180},
     //     {name: 'Ryan', amount: 250},
     //     {name: 'George', amount: 320}
     // ];
+    //     for(i = 0; i < 320; i++){
+    //         if (i % 2 === 0){
+    //             console.log()
+    //
+    //         }
+    //     }
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -54,6 +73,47 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+        var books = {
+            bookNames: ["The Salmon of Doubt", "The Chronicles of Narnia",
+                "Harry Potter And The Sorcerer's Stone", "The Historian",
+                "The Last Olympian"],
+
+                bookInfo: [
+                    {
+                        TheSalmonOfDoubt: {
+                            firstName: "Douglas",
+                            lastName: "Adams",
+                        }
+                    },
+                    {
+                        ChroniclesOfNarnia:{
+                                firstName: "C.S.",
+                                lastName: "Lewis",
+                            }
+                        },
+                    {
+                        HarryPotter: {
+                            firstName: "J.K.",
+                            lastName: "Rowling",
+                        }
+                    },
+                    {
+                        TheHistorian:{
+                                firstName: "Elizabeth",
+                                lastName: "Kostova",
+                            }
+                        },
+                    {
+                        TheLastOlympian:{
+                            firstName: "Rick",
+                            lastName: "Riordan",
+                        }
+                    },
+
+                ]
+        }
+
 
     /**
      * TODO:
@@ -79,6 +139,14 @@
      *      ---
      *      ...
      */
+
+
+            var bookInfo = Object.keys(books);
+
+            console.log(books.bookInfo.TheHistorian)
+
+
+
 
     /**
      * Bonus:
