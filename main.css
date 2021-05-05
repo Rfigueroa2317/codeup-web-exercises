@@ -1,0 +1,34 @@
+/* CSS */
+
+/* multi-line comments
+    hello world
+    multiple lines
+ */
+
+/* What element(s) are you styling on your html page*/
+selector {
+    /* actual style changes lives inside curly brackets */
+    property: value
+    /* property: what about the element you want to change (color, font size, background color) */
+    /* value: what you want to change about the property (what color? which font size? which background color? )*/
+
+    /* property and value separated by colon */
+    /* end every declaration with a semicolon */
+}
+h1 {
+    color:blue; /* single comment */
+    font-size: 30px;
+    border: 2px dotted black;
+}
+
+p {
+    color: aquamarine; /* single comment */
+}
+
+span{
+    border: 1px solid red;
+}
+
+p, Li {
+    color: mediumpurple;
+}
