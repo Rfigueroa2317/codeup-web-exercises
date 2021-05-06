@@ -12,6 +12,7 @@
         // }
         //     console.log(isOdd(11));
 
+
 // .2   Make a function named `isEven(number)
 
         // function isEven(input){
@@ -23,6 +24,7 @@
         // }
         // console.log(isEven());
 
+
 // .3    Make a function named `identity(input)` that returns the input exactly as
 //       provided.
 
@@ -31,6 +33,7 @@
         // }
         //
         // console.log(identity('NaN'));
+
 
 // .4   Make a function named isFive(input)
 
@@ -77,7 +80,43 @@
         // console.log(isThree());
 
 
-// .8   Make a function named `isMultipleOf(target, n)`
-//      which checks if target is evenly divisible by `n`
+// .8   Make a function named `isMultipleOfThree(input)`
 
-        function isMultipleOf()
+        // function isMultipleOfThree(input){
+        //         if(input % 3 === 0){
+        //                 return true;
+        //         }else{
+        //                 return false;
+        //         }
+        // }
+        //
+
+
+// .9   Make a function named `isMultipleOfThreeAndFive(input)`
+
+        // function isMultipleOfThreeAndFive(input){
+        //         if(input % 5 === 0 && input % 3 === 0){
+        //                 return "AIN'T NUTHIN BUT A PEANUT!";
+        //         }else if(input % 5 ===0){
+        //                 return "YEAH BUDDY!";
+        //         }else if(input % 3 ===0){
+        //                 return "LIGHTWEIGHT BABY!";
+        //         }else{
+        //                 return 'no gains...';
+        //         }
+        // }
+        //         console.log(isMultipleOfThreeAndFive(35));
+
+
+// .10  Make a function named `isMultipleOf(target, n)` which checks if target is
+//      evenly divisible by `n`
+
+        function isMultipleOf(target, n){
+                if(target % n === 0){
+                        return Math.floor((target) / n);
+                }else{
+                        return false;
+                }
+
+        }
+        console.log(isMultipleOf(9,2));

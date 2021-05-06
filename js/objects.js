@@ -31,7 +31,7 @@
             person.sayHello = function (){
                 return "Hello from Ricardo Figueroa!";
             }
-
+            console.log(person.sayHello());
 
 
     /** TODO:

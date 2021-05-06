@@ -30,15 +30,15 @@
  *  or is a numeric string ("45"), then return false.
  */
 
-        function getReverse(input){
-            if(input !== 'string'){
-                return input.reverse;
-            }else{
-                return false;
-            }
-        }
-
-        console.log(getReverse('Hello'))
+        // function getReverse(input){
+        //     if(input !== 'string'){
+        //         return input.reverse;
+        //     }else{
+        //         return false;
+        //     }
+        // }
+        //
+        // console.log(getReverse('Hello'))
 
 
 
@@ -50,7 +50,9 @@
  */
 
         // function multiplySquares(num1, num2){
+        //     if (){
         //
+        //     }
         // }
 
 
@@ -61,11 +63,11 @@
      is not a number or numeric string, addTo should return false
  */
 
-        function addTo(input){
-            if(){
-
-            }
-        }
+        // function addTo(input){
+        //     if(){
+        //
+        //     }
+        // }
 
 
 
