@@ -18,7 +18,7 @@ function showMultiplicationTable(num){
     }
 }
 
-console.log(showMultiplicationTable(9));
+console.log(showMultiplicationTable(7));
 
 // TODO: Loop through a set of numbers (0-30), if the number
 //  you're currently at is even, add 2 to it. If it's an
@@ -35,7 +35,7 @@ console.log(showMultiplicationTable(9));
 // }
 // console.log(i);
 
-// remainder opertor : will return any remainders;
+// remainder operator : will return any remainders;
 // if it's divisible by 2 and the output of that division is 0;
 
 // if(condition){

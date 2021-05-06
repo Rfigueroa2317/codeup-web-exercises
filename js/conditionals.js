@@ -31,7 +31,7 @@
     //                         console.log("Idk anything about that color")
     //                  }
     //                  return color;
-    // }
+    //             }
     //             console.log(analyzeColor("blue"));
 
 
@@ -58,7 +58,8 @@
 
     // var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
     // var randomColor = colors[Math.floor(Math.random() * colors.length)];
-    /**
+
+     /**
      * TODO:
      * Pass the `randomColor` variable to your function and console.log the results.
      * You should see a different message every time you refresh the page
@@ -80,17 +81,17 @@
         // }
         //     console.log(analyzeColor(randomColor));
 
-//          ***function analyzeColorSwitch(colors) {
-//              switch (color) {
-//              case "blue":
-//                  return "blue is the color of the sky";
-//              case "red":
-//                  return "strawberries are red";
-//              default:
-//                  return "I don't know anything about " + color;
-//                      }
-//                  }
-//              console.log(analyzeColorSwitch("blue"));
+         // function analyzeColorSwitch(colors) {
+         //     switch (color) {
+         //     case "blue":
+         //         return "blue is the color of the sky";
+         //     case "red":
+         //         return "strawberries are red";
+         //     default:
+         //         return "I don't know anything about " + color;
+         //             }
+         //         }
+         //     console.log(analyzeColorSwitch("blue"));
 
 
                 // *** LONGER VERSION ***
@@ -121,19 +122,14 @@ git * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
 
-            // *** WORK ON THIS ONE ***
 
-       //  function analyzeColor(color) {
-       //  return prompt(analyzeColor(color))
-       //
-       //  prompt(analyzeColor("The color is" + randomColor));
-       //
-       // //var userPromptColor = prompt("type a color");
 
-       //  alert(analyzeColor(userPromptColor));
-       //      }
-       //  }
-       //      console.log(prompt())
+        // function analyzeColor(color) {
+        //     return color;
+        //     }
+        // console.log((analyzeColor("The color is " + randomColor)));
+
+
 
 
 /* ########################################################################## */
@@ -158,39 +154,15 @@ git * user to your `analyzeColor` function. Alert the return value from your
  * return value.
  */
 
-                    // var total = 100;
-                    // var number = 0 || 1 || 2 || 3 || 4 || 5;
-                    // var luckyNumber = Math.floor(Math.random(number) * 5);
-                    //
-                    // function calculateTotal(luckyNumber, total) {
-                    //     //return total - (luckyNumber * total)
-                    //
-                    //     if ( number === 1) {
-                    //         console.log(`Congrats you get ${.10} off!`);
-                    //         return total - ( .10 * total);
-                    //
-                    //     } else if (number === 2) {
-                    //         console.log(`Congrats you get ${.25} off!`);
-                    //         return total - (.25 * total)
-                    //
-                    //     } else if (number === 3) {
-                    //         console.log(`Congrats you get ${.35} off!`);
-                    //         return total - (.35 * total)
-                    //
-                    //     } else if (number === 4) {
-                    //         console.log(`Congrats you get ${.50} off!`);
-                    //         return total - (.50 * total)
-                    //
-                    //     } else if (number === 5) {
-                    //         console.log(`Congrats you get ${.10} off!`);
-                    //         return total - (1 * total)
-                    //
-                    //     } else {
-                    //         console.log("Sorry, better luck next time.");
-                    //     }
-                    // }
-                    //
-                    //     console.log(calculateTotal(luckyNumber, total));
+                    var total = 100;
+                    var number = [0, 1, 2, 3, 4, 5];
+                    var luckyNumber = number[Math.floor(Math.random()*number.length)];
+
+                    function calculateTotal(luckyNumber, total) {
+
+                        return total - (luckyNumber * total)
+                     }
+                     console.log(calculateTotal(luckyNumber, total));
 
 
 /**
@@ -201,13 +173,13 @@ git * user to your `analyzeColor` function. Alert the return value from your
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
-//
-//  function numberToCurrency(number) {
-//      return "$" + number.toFixed(2);
-//  }
-//
-//     console.log(luckyNumber);
+    // var luckyNumber = Math.floor(Math.random() * 6);
+    //
+    //  function numberToCurrency(number) {
+    //      return "$" + number.toFixed(2);
+    //  }
+    //
+    //     console.log(luckyNumber);
 
 
 /**
