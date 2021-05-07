@@ -154,16 +154,33 @@ git * user to your `analyzeColor` function. Alert the return value from your
  * return value.
  */
 
-                    var total = 100;
-                    var number = [0, 1, 2, 3, 4, 5];
-                    var luckyNumber = number[Math.floor(Math.random()*number.length)];
+    // 100 - (100 * .10)
+    // total - (total * discount percentage)
+    // if (luckynumber == 0 "discount percentage is zero"
 
-                    function calculateTotal(luckyNumber, total) {
+            // var total = 100;
+            //
+            //     function calculateTotal(luckyNumber, total) {
+            //                 if(luckyNumber === 1){
+            //                     return total - (total * 0.1);
+            //                 }else if(luckyNumber === 2){
+            //                     return total - (total * 0.25)
+            //                 }else if(luckyNumber === 3) {
+            //                     return total - (total * 0.35)
+            //                 }else if(luckyNumber === 4){
+            //                     return total - (total * 0.5)
+            //                 }else if(luckyNumber === 5){
+            //                     return 0;
+            //                 }else{
+            //                     return  total;
+            //                 }
+            //           }
+                    //  console.log(calculateTotal(luckyNumber, total));
 
-                        return total - (luckyNumber * total)
-                     }
-                     console.log(calculateTotal(luckyNumber, total));
-
+//function call
+// console.log(calculateTotal(0, 100)); // returns 100
+// console.log(calculateTotal(4, 100)); // returns 50
+// console.log(calculateTotal(5, 10));
 
 /**
  * TODO:
@@ -173,13 +190,14 @@ git * user to your `analyzeColor` function. Alert the return value from your
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
+
+
     // var luckyNumber = Math.floor(Math.random() * 6);
     //
-    //  function numberToCurrency(number) {
-    //      return "$" + number.toFixed(2);
-    //  }
-    //
-    //     console.log(luckyNumber);
+    //     console.log(`your total is ${100}, you drew ${luckyNumber},
+    //      congrats! your new total is ${calculateTotal(luckyNumber,total)}`)
+
+
 
 
 /**
@@ -198,6 +216,39 @@ git * user to your `analyzeColor` function. Alert the return value from your
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+        //var playCheck
+        function numberTest() {
+            if(confirm("Would you like to enter a number?")=== true){
+                return true;
+            }else{
+                alert("Ok then have a nice day");
+                return false;
+            }
 
-//      ***function numberTest() {
-//          var playCheck
+        }
+        console.log(numberTest());
+
+    var number;
+
+        function inputNumber(num){
+            return prompt("What number do you want to type in?");
+            if (number % 2 === 0){
+                return alert("That's an even Number!");
+
+            }else if(number % 2 === 1){
+                alert("That's an odd number!");
+                return false;
+            }
+        }
+            console.log(inputNumber(number));
+
+
+
+
+
+
+
+
+
+
+

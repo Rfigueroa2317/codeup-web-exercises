@@ -8,17 +8,17 @@
 //     }
 // }
 
-function showMultiplicationTable(num){
-    // starting at 1, stopping at 10, iterate 1 by 1
-    for (var i = 1; i <= num; i++) {
-        // solution variable holding result of num * 1
-        console.log(`${num} * ${i} = ${num * i}`);
-        var solution = num * i;
-        console.log(`${num} * {i} = ${solution}`);
-    }
-}
+// function showMultiplicationTable(num){
+//     // starting at 1, stopping at 10, iterate 1 by 1
+//     for (var i = 1; i <= num; i++) {
+//         // solution variable holding result of num * 1
+//         console.log(`${num} * ${i} = ${num * i}`);
+//         var solution = num * i;
+//         console.log(`${num} * {i} = ${solution}`);
+//     }
+// }
 
-console.log(showMultiplicationTable(7));
+//console.log(showMultiplicationTable(7));
 
 // TODO: Loop through a set of numbers (0-30), if the number
 //  you're currently at is even, add 2 to it. If it's an
@@ -87,4 +87,35 @@ console.log(showMultiplicationTable(7));
 //         console.log("polo " + i2);
 //     }
 // }
+
+
+// .4 TODO: Create a for loop that uses console.log
+//     to create the output shown below.
+
+
+
+    // function pyramidNumber(num) {
+    //     var number = '';
+    //
+    //     for (var i = 1; i <= 9; i++) {
+    //         console.log(number += i);
+    //     }
+    // }
+    // pyramidNumber(9);
+
+
+
+// .5 TODO: Create a for loop that uses console.log to create
+//     the output shown below.
+
+
+    // function multipleOfFive(input){
+    //     var num = 0;
+    //
+    //     for (var i = 0; i < 20; i++){
+    //         console.log(num += 5);
+    //     }
+    // }
+    // multipleOfFive(5)
+
 

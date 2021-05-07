@@ -42,21 +42,23 @@
     sold to each person. This is a way get the random numbers for this exercise.
  */
 
+        var allCones = Math.floor(Math.random() * 50) + 50;
+
         function conesSold(min, max){
             min = Math.ceil(min);
             max = Math.floor(max);
-            return Math.floor(Math.random()* (max-min +1)) + min;
+            return allCones;
         }
-        console.log(conesSold(50,100))
+        console.log(conesSold(allCones))
 
 
-        var i = 1
+        var i = 5 + 1;
 
         do {
-            i++;
             console.log('i = ' + i);
-        }while(i < 5);
+        }while(i < 100);
 
-        console.log(conesSold())
+        console.log(conesSold());
 
 
+// return Math.floor(Math.random()* (max-min +1)) + min;
