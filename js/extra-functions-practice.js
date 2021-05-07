@@ -112,11 +112,10 @@
 //      evenly divisible by `n`
 
         function isMultipleOf(target, n){
-                if(target % n === 0){
-                        return Math.floor((target) / n);
+                if(target / n){
+                        return Math.floor(target / n);
                 }else{
                         return false;
                 }
-
         }
-        console.log(isMultipleOf(9,2));
+        console.log(isMultipleOf(8,2));
