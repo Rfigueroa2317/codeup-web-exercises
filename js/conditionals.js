@@ -228,19 +228,49 @@ git * user to your `analyzeColor` function. Alert the return value from your
         }
         console.log(numberTest());
 
-    var number;
 
-        function inputNumber(num){
-            return prompt("What number do you want to type in?");
-            if (number % 2 === 0){
-                return alert("That's an even Number!");
-
-            }else if(number % 2 === 1){
+        function inputNumber(){
+             var num = parseFloat(prompt("What number do you want to type in?"));
+            console.log(num)
+            if(num % 2 === 0){
+                 alert("That's an even Number!");
+                 alert(num+100);
+                 if(num > 0){
+                     alert("your number is positive!")
+                 }else{
+                     alert("number is negative")
+                 }
+            }else{
                 alert("That's an odd number!");
-                return false;
+                alert(num+100);
+                if(num > 0){
+                    alert("your number is positive!")
+                }else{
+                    alert("number is negative")
+                }
+
             }
         }
-            console.log(inputNumber(number));
+            console.log(inputNumber());
+
+            function evenNumber(input){
+                if(num % 2 === 0){
+                    alert(num+100);
+                    if(num > 0){
+                        alert("your number is positive!")
+                    }else{
+                        alert("number is negative")
+                    }
+            }
+            function isNumberPositive(){
+
+            }
+
+            function numberPlus100(){
+
+            }
+            }
+
 
 
 
