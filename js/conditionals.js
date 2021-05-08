@@ -218,58 +218,96 @@ git * user to your `analyzeColor` function. Alert the return value from your
  */
         //var playCheck
         function numberTest() {
-            if(confirm("Would you like to enter a number?")=== true){
-                return true;
+            var doesUserWantToPlay = confirm("Would you like to enter a number?");
+            if(doesUserWantToPlay === true){
+                inputNumber();
             }else{
                 alert("Ok then have a nice day");
                 return false;
             }
-
         }
-        console.log(numberTest());
+       // console.log(numberTest());
+            numberTest();
 
+         //numberTest();
 
         function inputNumber(){
              var num = parseFloat(prompt("What number do you want to type in?"));
-            console.log(num)
-            if(num % 2 === 0){
-                 alert("That's an even Number!");
-                 alert(num+100);
-                 if(num > 0){
-                     alert("your number is positive!")
-                 }else{
-                     alert("number is negative")
-                 }
-            }else{
-                alert("That's an odd number!");
-                alert(num+100);
-                if(num > 0){
-                    alert("your number is positive!")
-                }else{
-                    alert("number is negative")
-                }
+             if( isNaN(num) !== true ){
+                 console.log(num)
+                 isOddOrEven(num)
+                 isPositiveOrNegative(num)
+                 numberPlus100(num)
 
-            }
+             }else{
+                 alert("That's not a number. Have a nice day!");
+             }
+            // console.log(num)
+            // isOddOrEven(num)
+            // isPositiveOrNegative(num)
+            // numberPlus100(num)
+
+            // if(num % 2 === 0){
+            //      alert("That's an even Number!");
+            //      alert(num+100);
+            //      if(num > 0){
+            //          alert("your number is positive!")
+            //      }else{
+            //          alert("number is negative")
+            //      }
+            // }else{
+            //     alert("That's an odd number!");
+            //     alert(num+100);
+            //     if(num > 0){
+            //         alert("your number is positive!")
+            //     }else{
+            //         alert("number is negative")
+            //     }
+
+           // }
         }
-            console.log(inputNumber());
+            // console.log(inputNumber());
 
-            function evenNumber(input){
-                if(num % 2 === 0){
-                    alert(num+100);
-                    if(num > 0){
-                        alert("your number is positive!")
-                    }else{
-                        alert("number is negative")
-                    }
+            function isOddOrEven(number) {
+                if (number % 2 === 0) {
+                    alert("That's an even Number!");
+                } else{
+                    alert("That's an odd Number!");
+                }
             }
-            function isNumberPositive(){
+                //isOddOrEven(2);
 
-            }
 
-            function numberPlus100(){
+            function isPositiveOrNegative(number = 5){
+                if(number > 0){
+                    alert("number is positive!");
+                }else if(number < 0){
+                    alert("number is negative!");
+                }else{
+                    alert("number is 0!");
+                }
+            }
+            //isPositiveOrNegative();
 
+            function numberPlus100(number = 4){
+                alert(number+100);
             }
-            }
+            //numberPlus100(parseFloat(5))
+        //console.log( parseFloat('dfd3456asdf345') )
+
+        console.log('--------------------------------------')
+
+        function functionHolder(){
+            isOddOrEven(5);
+            isPositiveOrNegative(3);
+            numberPlus100(2);
+        }
+
+        // functionHolder();
+
+console.log('---------------------------------------');
+
+        //inputNumber();
 
 
 
