@@ -17,15 +17,20 @@
 //     }
 // }
 
-// .2
+// .2 Prompt the user for an odd number between 1 and 50.
+//    Use a loop and a break statement to continue prompting
+//    the user if they enter invalid input.
 
-var skipNum = 27;
 
-for (var i = 1; i < 50; i++){
-
-    if(i % 2 === 1){
-        console.log("Here is an odd number: " + i)
-
-    }else{
+for (var i = 1; i < 100; i += 2) {
+    if(i === 27) {
+        continue;
     }
+    console.log("Here's an odd number: " + i)
+
+    if(i === 49) {
+        break;
+    }
+
 }
+
