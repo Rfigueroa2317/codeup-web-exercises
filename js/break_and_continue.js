@@ -22,7 +22,7 @@
 //    the user if they enter invalid input.
 
 
-for (var i = 1; i < 100; i += 2) {
+for (var i = 1; i < 50; i += 2) {
     if(i === 27) {
         continue;
     }
