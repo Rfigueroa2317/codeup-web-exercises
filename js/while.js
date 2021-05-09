@@ -40,25 +40,21 @@
     between 1 and 5, simulating the amount of cones being bought by her
     clients. Use a do-while loop to log to the console the amount of cones
     sold to each person. This is a way get the random numbers for this exercise.
- */
+ */ // Use a do While loop for this one //
 
-        var allCones = Math.floor(Math.random() * 50) + 50;
+// This is how you get a random number between 50 and 100
+    var allCones = Math.floor(Math.random() * 50) + 50;
+// This expression will generate a random number between 1 and 5
+    var conesSold = Math.floor(Math.random() * 5) + 1;
 
-        function conesSold(min, max){
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return allCones;
-        }
-        console.log(conesSold(allCones))
+        console.log("This is how many cones you have left " + allCones);
 
-
-        var i = 5 + 1;
-
-        do {
-            console.log('i = ' + i);
-        }while(i < 100);
-
-        console.log(conesSold());
+    do  {
+        console.log("this is how many cones you have sold " + conesSold);
+            conesSold++;
+    }while (allCones === 100);
 
 
-// return Math.floor(Math.random()* (max-min +1)) + min;
+
+// in a do while loop: first evaluate the body of the
+// loop and then check the condition
