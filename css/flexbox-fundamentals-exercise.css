@@ -50,6 +50,7 @@ section:nth-of-type(1) {
     height: 3em;
     background: lightgreen;
     /* enter needed declarations here */
+    align-items: center;
     justify-content: space-evenly;
 
 }
@@ -67,7 +68,10 @@ section:nth-of-type(1) div:last-child {
 
 .purple-box:nth-of-type(1) {
     /* enter needed declarations here */
-    justify-content: flex-start;
+    display: flex;
+    align-items: 0;
+    justify-content: right;
+
 }
 
 .purple-box:nth-of-type(2) {
