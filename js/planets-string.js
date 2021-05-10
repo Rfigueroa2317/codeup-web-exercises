@@ -1,7 +1,7 @@
 (function(){
     "use strict";
 
-    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    // var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
 
     /**
      * TODO:
@@ -9,8 +9,8 @@
      * planetsArray.
      * console.log planetsArray to check your work
      */
-        var planetsArray = planetsString.split( "");
-        console.log(planetsArray);
+        // var planetsArray = planetsString.split( "");
+        // console.log(planetsArray);
 
     /**
      * TODO:
@@ -18,12 +18,10 @@
      * results. Why might this be useful?
      */
 
-        // var str = "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune"
-        //     console.log(str);
+        var str = `{<br>}Mercury{</br>} , {<br>}Venus{</br>} , {<br>}Earth{</br>} , {<br>} Mars{</br>} , {<br>}Jupiter{</br>} , {<br>}Saturn{</br>} , {<br>}Uranus{</br>} , {<br>}Neptune{</br>}`
 
-            // The <br> line is an HTML element which produces a line break, making
-            //  the lines easier to read. You cannot use them in JS. You can however,
-            //  use '\n' to create a similar effect in JS.
+            console.log(str + `{<br>}`);
+
 
      /**
       BONUS:
