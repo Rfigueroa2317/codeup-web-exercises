@@ -8,7 +8,7 @@
         getArea: function () {
             // TODO: complete this method
             // hint: area = pi * radius^2
-
+            //console.log(circle.getArea(3.14)*this.radius.pow(2));
 
             return; // TODO: return the proper value
         },
