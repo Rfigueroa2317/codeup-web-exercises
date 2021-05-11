@@ -45,18 +45,66 @@
 // This is how you get a random number between 50 and 100
     var allCones = Math.floor(Math.random() * 50) + 50;
 // This expression will generate a random number between 1 and 5
-    var conesSold = Math.floor(Math.random() * 5) + 1;
+//     var conesSold = Math.floor(Math.random() * 5) + 1;
 
-        console.log("This is how many cones you have left " + allCones);
+        // console.log("This is how many cones I started with " + allCones);
 
     do  {
-        console.log("this is how many cones you have sold " + conesSold);
-            conesSold++;
-    }while (allCones === 100);
+        console.log("This is how many cones you have left " + allCones);
+        var conesSold = Math.floor(Math.random() * 5) + 1;
+        if(conesSold <= allCones){
+            console.log("I've sold this many ",conesSold)
+            allCones -= conesSold;
+        }else{
+            console.log("I can't sell you that many");
+        }
+    }while (allCones !== 0);
+            console.log("I sold them all");
 
+    // do {
+    //     if(wantedCones > allCones){
+    //         console.log()
+    //     }
+    // }
+//if cones sold
+
+
+    // generate a random number
+        // *this is already taken care of on line 46 (math.random)
+
+    // random number must be between 50 and 100
+        // already taken care of in variable allCones
+
+    // generate another random number
+        // already done in line 48
+
+    // that second number should be 1 and 5
+        // already done in variable conesSold
+
+    // write a do while loop
+        // done in line 42
+
+    // write a console log inside that do while loop
+        // already taken care of in line 53
+
+    // what you're login is the number of cones being sold
+    //
+
+
+    // print out how many cones are being sold if AND ONLY IF there's enough cones anything > 0
+
+    // if you have more cones being asked for than cones remaining then cannot sell you any more
+
+    // If this is the case, then print a string that says: 'cannot sell (x) cones, I only have (y) - x = amount
+    //  of cones asked for and y = amount of cones left
+
+    // print out a string that says 'Yay! I sold them all' but ONLY IF: amount of cones left (allCones) is equal(===) to 0
 
 
 
 
 // in a do while loop: first evaluate the body of the
 // loop and then check the condition
+
+// **in ternary**
+// customCones <= allCones ? console.log("I've Sold this many: ",allCones = allCones - customCones) : console.log("Ive sold them all");
