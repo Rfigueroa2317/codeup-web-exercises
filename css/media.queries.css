@@ -1,0 +1,32 @@
+
+#logo{
+    height: 100px;
+}
+
+header {
+    display: flex;
+}
+
+/*Media Queries*/
+
+/*syntax*/
+
+@media screen and (min-width: 606px){
+    body{
+        background-color: lightskyblue;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        color: green;
+    }
+
+}
+
+/* change background color to orange */
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    body {
+        background-color: orange;
+    }
+}
