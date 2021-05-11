@@ -1,0 +1,61 @@
+
+#logo{
+    height: 100px;
+}
+
+header {
+    display: flex;
+}
+
+/*Media Queries*/
+
+/*syntax*/
+
+@media screen and (min-width: 606px){
+    body{
+        background-color: lightskyblue;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        color: green;
+    }
+
+}
+
+/* change background color to orange */
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    body {
+        background-color: orange;
+    }
+}
+
+/* small devices (phones and pocket devices, 576 and up */
+@media screen and (min-width:576px) {
+    body {
+        background-color: mediumvioletred;
+    }
+}
+
+/* Medium devices (tablets, 768px and up */
+@media screen and (min-width: 768px){
+    body{
+        background-color: purple;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width:992px) {
+    body{
+        background-color: deepskyblue;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px){
+    body{
+        background-color: aquamarine;
+    }
+
+}
