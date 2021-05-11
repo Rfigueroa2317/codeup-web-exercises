@@ -20,7 +20,7 @@
 //  will behave like true
 
         function isTruthy(input){
-            return
+            return 0;
         }
 
 
@@ -28,5 +28,5 @@
 //  behave like false
 
         function isFalsy(input){
-
+            return 0;
         }
