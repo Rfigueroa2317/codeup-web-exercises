@@ -61,12 +61,6 @@
     }while (allCones !== 0);
             console.log("I sold them all");
 
-    // do {
-    //     if(wantedCones > allCones){
-    //         console.log()
-    //     }
-    // }
-//if cones sold
 
 
     // generate a random number
