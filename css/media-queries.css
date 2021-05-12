@@ -45,4 +45,20 @@
         font-size: 100px;
     }
 
+    .header-img img {
+        width: 96%;
+        padding: 20px;
+    }
+    h2 {
+        font-family: Verdana;
+        font-size: 50px;
+
+    }
+     p {
+        font-size: 34px;
+         font-family: Verdana;
+
+    }
+
+
 }
