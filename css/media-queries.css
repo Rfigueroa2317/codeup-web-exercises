@@ -1,5 +1,8 @@
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 200px) and (max-width: 576px) {
+body {
+    background-color: green;
+}
     .hidden-on-desktop {
         background-color: aqua;
         display: flex;
@@ -35,7 +38,7 @@
     }
 
     nav li {
-        list-style:none ;
+        list-style: none;
         width: 100%;
     }
 
@@ -49,16 +52,27 @@
         width: 96%;
         padding: 20px;
     }
+
     h2 {
         font-family: Verdana;
         font-size: 50px;
 
     }
-     p {
+
+    p {
         font-size: 34px;
-         font-family: Verdana;
 
     }
-
-
 }
+@media screen and (min-width:768px){
+    body {
+        background-color: pink;
+        display: inline-flex;
+        flex-direction: row;
+        padding: 15px;
+        margin: 0;
+        flex-wrap: wrap;
+        font-family: Verdana;
+    }
+}
+
