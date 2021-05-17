@@ -5,7 +5,7 @@
 
 function secondToLast(){
     var arr = ['apple', 'lemon', 'orange', 'mango']
-    return typeof arr.indexOf();
+    return typeof arr[arr.length -2];
 }
 
-console.log(secondToLast.length('orange'))
+console.log(secondToLast(arr))
