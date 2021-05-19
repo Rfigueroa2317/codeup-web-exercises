@@ -702,5 +702,44 @@ assert(areaOfRectangle(2, 7), 14, "Exercise 40");
 assert(areaOfRectangle(5.3, 10.3), 54.59, "Exercise 40");
 addToDone("Exercise 40 is correct.")
 
+// Exercise 41
+// Write a function definition named areaOfCircle that takes in a number representing a circle's radius and returns the area of the circle
+
+function areaOfCircle(num){
+    return Math.PI * num * num;
+}
+
+assert(areaOfCircle(3), 28.274333882308138, "Exercise 41");
+assert(areaOfCircle(5), 78.53981633974483, "Exercise 41");
+assert(areaOfCircle(7), 153.93804002589985, "Exercise 41");
+addToDone("Exercise 41 is correct.")
+
+
+// Exercise 42
+// Write a function definition named circumference that takes in a number representing a circle's radius and returns the circumference.
+
+function circumference(num){
+    return 2 * Math.PI * num;
+}
+
+assert(circumference(3), 18.84955592153876, "Exercise 42");
+assert(circumference(5), 31.41592653589793, "Exercise 42");
+assert(circumference(7), 43.982297150257104, "Exercise 42");
+addToDone("Exercise 42 is correct.")
+
+
+// In earlier exercises, the solution was to use a logical AND.
+// In some of the future exercises, the solution will be to use a logical OR.
+// The following two example functions are examples that provide a hint on how to as
+
+// Example function where the function returns true if the input is one OR two.
+function isOneOrTwo(x) {
+    return x == 1 || x == 2
+}
+
+// Example function where the input is one of 3 possibilities
+function isOneOrTwoOrThree(x) {
+    return x == 1 || x == 2 || x == 3
+}
 
 
