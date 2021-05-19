@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background: transparent;
+}
+
+/*ul {*/
+/*    border: solid;*/
+/*    list-style: none;*/
+/*}*/
+
+/*#section-with-images {*/
+/*    border: solid;*/
+/*}*/
+
+/*#section-with-apples {*
+/*    background-color: green;*/
+/*    border: solid;*/
+/*    color: red;*/
+/*}*/
+
+/*#section-with-apples #images {*/
+/*    color: white;*/
+/*}*/
+
+/*nav {*/
+/*    border:solid;*/
+/*}*/
+body {
+    background-color: #f0f0f0;
+    /*background-color: #e6e6e6;*/
+    font-family: Verdana, sans-serif;
+}
+
+#visual-container {
+    /*border: solid;*/
+}
+
+#buttons-underneath-park-city {
+    /*border: solid;*/
+}
+
+#main-body-of-website {
+    /*border: solid;*/
+}
+
+/*.col-sm-1 {*/
+/*    border: solid;*/
+/*}*/
+
+/*.col-sm-2 {*/
+/*    border: solid;*/
+/*}*/
+
+/*.col-md-1 {*/
+/*    font-size: .5em;*/
+/*}*/
+
+h2.col-12 {
+    font-size: 2.5rem;
+}
+
+#design-button {
+    /*border: black solid;*/
+}
+
+#section-with-images > div {
+    /*border: black solid;*/
+}
+
+#design-button {
+    height: 15em;
+}
+
+.twitter-image {
+    background-image: url("../assets/twitter-24.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+@media screen and (min-width: 200px) {
+    h2 {
+        font-size: 1.8rem !important;
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+    }
+
+    span {
+        align-self: center;
+        text-align: center;
+        display: block;
+        min-width: 5rem !important;
+        min-height: 5rem;
+        max-height: 150px;
+        max-width: 150px !important;
+        line-height: 140px;
+
+        border: solid white .5rem;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        background-color: red;
+        color: white;
+        font-size: 1.2rem;
+
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .design {
+        background-color: #e6563b;
+    }
+
+    .develop {
+        background-color: #dea03d;
+    }
+
+    .support {
+        background-color: #7cb06c;
+    }
+
+    .host {
+        background-color: #00aba9;
+    }
+
+    div.image {
+        height: 17rem !important;
+        width: 15rem;
+        /*background-image: url("../assets/dog-photo-1.jpeg");*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        border: solid #e6e6e6 5px;
+        border-radius: 5px;
+    }
+
+    #section-with-apples div.image {
+        background-image: url("../assets/apples.jpg");
+    }
+
+    #section-with-macs div.image {
+        background-image: url("../assets/mac-guy.jpg");
+    }
+
+    #section-with-glasses div.image {
+        background-image: url("../assets/glasses.jpg");
+    }
+
+    #section-with-security div.image {
+        background-image: url("../assets/security.jpg");
+    }
+
+
+    div.mini-buttons div.col-1 {
+        align-self: flex-start;
+        text-align: center;
+        display: block;
+        max-height: 2rem;
+        max-width: 2rem;
+        line-height: 1.5rem;
+        padding: 0;
+
+        border: solid white .2rem;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        color: white;
+        font-size: .8rem;
+
+        margin-top: 2px;
+        margin-bottom: 1em;
+    }
+
+
+    .color-a {
+        background-color: #E6563B;
+    }
+
+    .color-b {
+        background-color: #DEA03D;
+    }
+
+    .color-c {
+        background-color: #7CB06C;
+    }
+
+    .color-d {
+        background-color: #00ABA9;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    span {
+        text-align: center;
+        display: block;
+        min-width: 10rem !important;
+        min-height: 10rem;
+        max-height: 180px;
+        max-width: 180px !important;
+        line-height: 170px;
+
+        border: solid white .5rem;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        color: white;
+        font-size: 1.6rem;
+
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    div.mini-buttons div.col-1 {
+        display: flow;
+        max-width: 30px;
+        height: 30px;
+    }
+
+    #last-section img.col-1 {
+        width: 2rem !important;
+        height: 30px !important;
+    }
+
+}

@@ -118,4 +118,4 @@
                         return false;
                 }
         }
-        console.log(isMultipleOf(8,2));
+        console.log(isMultipleOf(8,2)); // this is a comment****
