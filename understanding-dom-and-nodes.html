@@ -5,6 +5,23 @@
         <title>understanding-dom-and-nodes</title>
     </head>
     <body>
+        <p>Everything in this html document is a node.
+            Elements that are cascading from one another are the node children of their parent node. Ex;
+        </p>
+        <div>
+            <div>
+                <p>the div that is cascading from the top div is the node children of the top div</p>
+            </div>
+        </div>
+
+        <p>
+            Nodes that are inside headers are their own node.
+            Ex;
+            <h1>this is a header</h1>
+
+            The text 'this is a header' is a separate node of the h1 header. the text node is the children node of the header node. the header node is the children node of the paragraph node and so on.
+        </p>
+
 
     </body>
 </html>
