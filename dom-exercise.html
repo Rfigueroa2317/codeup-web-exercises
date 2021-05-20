@@ -14,6 +14,59 @@
 
             // TODO: print the following items to the console: 1) A node that represents a div/item with a red border. 2) an array of elements whose text is dark-green. 3) an array of all paragraph elements
 
+            // TODO: // *** make sure you do your own version of this ***
+            //  this is Laura's example ***
+
+            //      1. Create element
+            let newDiv = document.createElement("div");
+            console.log(newDiv);
+            //      2. Create ul with a few li’s
+            let newUl = document.createElement("ul");
+            console.log(newUl);
+            //      3. Change innerText of element created
+            newDiv.innerText = "this is a brand new div";
+            console.log(newDiv);
+            //      4. Change innerHTML of elements created
+            newDiv.innerHTML = "";
+            console.log(newDiv);
+
+            // // append - adding elements to other elements
+
+            let newContainer =document.createElement("div");
+            newContainer.setAttribute("class", "container");
+            console.log(newContainer);
+
+            //create paragraph element
+            let newPars = document.createElement("p");
+            // change its inner text
+            newPars.innerText = "hello world";
+            // adding a class
+            newPars.setAttribute("class", "border");
+            console.log(newPars);
+
+            // creating a new div element AND appending our newly created p element
+            newContainer.appendChild(newPars);
+            console.log(newContainer);
+
+            let existingDivs = document.querySelector("toBeFilled");
+            console.log(existingDivs[0]);
+            // .appendChild(newContainer);
+
+            // you don't have to be as specific when using querySelector or querySelectorAll to select elements
+            //querySelector --> node , returns first of the thing you're looking for (searches from top to bottom)
+            //querySelectorAll --> you don't have to
+            //getElementsByClassName --> HTMLCollection
+
+
+            // Removing Children
+            // 1. select our element
+            let faveList = document.querySelector("ul") // li with id of cats
+            console.log(faveList);
+            faveList.removeChild();
+            console.log(faveList);
+
+
+
             // ****** DON'T FORGET TO USE DOM SO YOU CAN SEE IT IN BOTH THE BROWSER AND THE CONSOLE*******
         </script>
 
@@ -34,6 +87,8 @@
                 </div>
             </div>
         </div>
+
+
 
 
     </body>
