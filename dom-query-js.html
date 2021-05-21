@@ -8,11 +8,11 @@
 
         <h1 id="main-header">Hello World!</h1>
         <ul>
-            <button><li data-dbid="1" id="dbid">Item 1</li></button>
-            <button><li data-dbid="2" id="dbid2">Item 2</li></button>
-            <button><li data-dbid="3" id="dbid3">Item 3</li></button>
-            <button><li data-dbid="4" id="dbid4">Item 4</li></button>
-            <button><li data-dbid="5" id="dbid5">Item 5</li></button>
+            <li data-dbid="1" id="dbid">Item 1</li>
+            <li data-dbid="2" id="dbid2">Item 2</li>
+            <li data-dbid="3" id="dbid3">Item 3</li>
+            <li data-dbid="4" id="dbid4">Item 4</li>
+            <li data-dbid="5" id="dbid5">Item 5</li>
         </ul>
         <h2 id="sub-header">Hello Again.</h2>
         <p class="sub-paragraph">
@@ -25,49 +25,68 @@
             culpa qui officia deserunt mollit anim id est laborum.
         </p>
 
+        <button type="button" class="btn btn-primary" id="click-primary">Primary</button>
+        <button type="button" class="btn btn-secondary" id="click-secondary">Secondary</button>
+        <button type="button" class="btn btn-success" id="click-success">Success</button>
+        <button type="button" class="btn btn-danger" id="click-danger">Danger</button>
+
         <script>
             (function () {
                 "use strict";
+
                 // TODO: Uncomment next line and get the main header element by id
-                function changeHeader(){
+                function changeHeader() {
 
-                var mainHeader = document.getElementById("main-header");
+                    var mainHeader = document.getElementById("main-header");
 
-                // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-                mainHeader.innerHTML="JavaScript is Cool";}
-                document
+                    // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+                    mainHeader.innerHTML = "JavaScript is Cool";
+                }
+
+                document.getElementById("click-primary").addEventListener("click",changeHeader);
+
 
                 // TODO: Uncomment the next line and get the sub header element by id
-                function changeColor (){
+                function changeColor() {
 
-                var subHeader = document.getElementById();
+                    var subHeader = document.getElementById("sub-header");
 
-                // TODO: Set the text color of subHeader to blue
-                subHeader.style.color="blue";}
+                    // TODO: Set the text color of subHeader to blue
+                    subHeader.style.color = "blue";
+                }
+                document.getElementById("click-secondary").addEventListener("click",changeColor);
 
                 // TODO: Uncomment the next line and get all list items
-                function changeBlue(){
+                function changeBlue() {
 
+
+                    var listItems = document.getElementsByTagName("li");
+
+                    // TODO: Set text color on every other list item to grey
+                    // TODO: Set text color of li with dbid = 1 to blue
+
+                    for (var i = 0; i < listItems.length; i++) {
+                        if (i % 2 === 1) {
+                            listItems[i].style.color = "grey";
+                        }
+                        if (listItems[i].className.includes("num1")) {
+                            listItems[i].style.color = "blue";
+                        }
+                    }
                 }
 
-                var listItems = document.getElementByTagName("li");
-
-                // TODO: Set text color on every other list item to grey
-                // TODO: Set text color of li with dbid = 1 to blue
-
-                for(var i = 0; i < listItems.length; i++){
-                    if (i % 2 === 1) {
-                        listItems[i].style.color = "grey";
-                    }
-                    if (listItems[i].className.icludes("num1")) {
-
-                    }
-                }
+                document.getElementById("click-success").addEventListener("click",changeBlue);
 
                 // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-                // var subParagraphs = ;
+                function subPar() {
+
+
+                    var subParagraphs = document.getElementsByClassName("sub-paragraph");
+                    subParagraphs[0].innerText = "Mission Accomplished!"
+                }
 
                 // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+                document.getElementById("click-danger").addEventListener("click", subPar)
 
 
             })();
