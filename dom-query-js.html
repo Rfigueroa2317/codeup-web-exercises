@@ -8,11 +8,11 @@
 
         <h1 id="main-header">Hello World!</h1>
         <ul>
-            <li data-dbid="1">Item 1</li>
-            <li data-dbid="2">Item 2</li>
-            <li data-dbid="3">Item 3</li>
-            <li data-dbid="4">Item 4</li>
-            <li data-dbid="5">Item 5</li>
+            <button><li data-dbid="1" id="dbid">Item 1</li></button>
+            <button><li data-dbid="2" id="dbid2">Item 2</li></button>
+            <button><li data-dbid="3" id="dbid3">Item 3</li></button>
+            <button><li data-dbid="4" id="dbid4">Item 4</li></button>
+            <button><li data-dbid="5" id="dbid5">Item 5</li></button>
         </ul>
         <h2 id="sub-header">Hello Again.</h2>
         <p class="sub-paragraph">
@@ -29,25 +29,47 @@
             (function () {
                 "use strict";
                 // TODO: Uncomment next line and get the main header element by id
-                // var mainHeader = ;
+                function changeHeader(){
+
+                var mainHeader = document.getElementById("main-header");
 
                 // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+                mainHeader.innerHTML="JavaScript is Cool";}
+                document
 
                 // TODO: Uncomment the next line and get the sub header element by id
-                // var subHeader = ;
+                function changeColor (){
+
+                var subHeader = document.getElementById();
 
                 // TODO: Set the text color of subHeader to blue
+                subHeader.style.color="blue";}
 
                 // TODO: Uncomment the next line and get all list items
-                // var listItems = ;
+                function changeBlue(){
+
+                }
+
+                var listItems = document.getElementByTagName("li");
 
                 // TODO: Set text color on every other list item to grey
                 // TODO: Set text color of li with dbid = 1 to blue
+
+                for(var i = 0; i < listItems.length; i++){
+                    if (i % 2 === 1) {
+                        listItems[i].style.color = "grey";
+                    }
+                    if (listItems[i].className.icludes("num1")) {
+
+                    }
+                }
 
                 // TODO: Uncomment the next line and get all elements with class name sub-paragraph
                 // var subParagraphs = ;
 
                 // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+
+
             })();
         </script>
     </body>
