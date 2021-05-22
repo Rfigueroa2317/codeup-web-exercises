@@ -10,8 +10,8 @@ body {
 h1 {text-align: center;}
 
 h2, h3 {
-    padding: 2px;
-    margin: 2px;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -39,7 +39,10 @@ h2, h3 {
     margin: 0 auto;
     /*align-items: center;*/
     /* enter needed declarations here */
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 
 
 }
@@ -95,7 +98,7 @@ section:nth-of-type(1) div:last-child {
     width: 100%;
     background: blue;
     height: 10em;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 section:nth-of-type(3) {
@@ -108,8 +111,6 @@ section:nth-of-type(3) h3 {
     /* enter needed declarations here */
     display: flex;
     flex-grow: 2;
-
-
 
 }
 
@@ -128,6 +129,7 @@ section:nth-of-type(3) h3 {
     /* enter needed declarations here */
     flex-grow: 2;
 
+
 }
 
 .large-brown-box:nth-of-type(2) {
@@ -138,6 +140,7 @@ section:nth-of-type(5) {
     /* enter needed declarations here */
     justify-content: space-evenly;
 /*    this moves the yellow squares     */
+
 }
 
 .yellow-box {
@@ -151,8 +154,10 @@ section:nth-of-type(6) {
     background: coral;
     height: 14em;
     /* enter needed declarations here */
-    /*flex-direction: column;*/
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 
 
