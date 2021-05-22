@@ -168,5 +168,6 @@ section:nth-of-type(6) {
 
 .grey-box:nth-of-type(odd) {
     height: 4em;
-
+    align-self: flex-start;
+    justify-content: space-around;
 }
