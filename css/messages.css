@@ -6,29 +6,43 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
-div.message.message-info {
+.message-info {
+    background-color: lightskyblue;
     color: blue;
-    width:100px;
-    height: 100px;
-    border: black;
-    /*width: 100%;*/
+    padding:10px;
+    margin:10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+
 }
 
-div.message.message-success {
-    color: green;
+.message-success {
+    background-color: lightgreen;
+    color:green;
     padding: 10px;
     margin: 10px;
-}
+    border: 1px solid lightgray;
+    border-radius: 5px;
 
-div.message.message-warning {
-    color: gold;
-    padding: 10px;
-    margin: 10px;
-}
 
-div.message.message-error {
-    color: red;
+}
+.message-warning {
+    background-color: lightgoldenrodyellow;
+    color: darkgoldenrod;
     padding: 10px;
     margin: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+}
+.message-error {
+    background-color: lightcoral;
+    color: darkred;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
 }
 
