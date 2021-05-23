@@ -968,3 +968,77 @@ assert(last(["JS", "is", "awesome"]), "awesome", "Exercise 54");
 assert(last(["kiwi", "mango", "guava"]), "guava", "Exercise 54");
 addToDone("Exercise 54 is correct.")
 
+// Exercise 55
+// Write a function definition named secondToLast that takes in sequence and returns the second to last value of that sequence.
+
+
+
+function secondToLast(input) {
+    if(typeof input === 'string'){
+        var newArr = input.split('')
+        var newArrReverse = newArr.reverse()
+
+    }else if (Array.isArray(input)){
+        var newArrReverse = input.reverse()
+    }
+    return newArrReverse [1];
+}
+
+assert(secondToLast("ubuntu"), "t", "Exercise 55");
+assert(secondToLast([1, 2, 3, 4]), 3, "Exercise 55");
+assert(secondToLast(["JS", "is", "awesome"]), "is", "Exercise 55");
+assert(secondToLast(["kiwi", "mango", "guava"]), "mango", "Exercise 55");
+addToDone("Exercise 55 is correct.")
+
+
+// Exercise 56
+// Write a function definition named thirdToLast that takes in sequence and returns the third to last value of that sequence.
+
+function thirdToLast(input){
+    if(typeof input === 'string'){
+        var newArr = input.split('')
+        var newArrReverse = newArr.reverse()
+    }else if(Array.isArray(input)){
+        var newArrReverse = input.reverse()
+    }
+    return newArrReverse[2];
+}
+
+assert(thirdToLast("ubuntu"), "n", "Exercise 56");
+assert(thirdToLast([1, 2, 3, 4]), 2, "Exercise 56");
+assert(thirdToLast(["JS", "is", "awesome"]), "JS", "Exercise 56");
+assert(thirdToLast(["strawberry", "kiwi", "mango", "guava"]), "kiwi", "Exercise 56");
+addToDone("Exercise 56 is correct.")
+
+
+// Exercise 57
+// Write a function definition named firstAndSecond that takes in sequence and returns the first and second value of that sequence as an array
+
+function firstAndSecond(input){
+    return input.slice (0,2);
+}
+
+assert(firstAndSecond([1, 2, 3, 4]), [1, 2], "Exercise 57");
+assert(firstAndSecond(["JS", "is", "awesome"]), ["JS", "is"], "Exercise 57");
+assert(firstAndSecond(["strawberry", "kiwi", "mango", "guava"]), ["strawberry", "kiwi"], "Exercise 57");
+addToDone("Exercise 57 is correct.")
+
+
+// Exercise 58
+// Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
+
+function firstAndLast (arr) {
+    var newArr = [];
+    var arrShift = arr.shift();
+    newArr.push(arrShift);
+    arrShift = arr.pop();
+    newArr.push(arrShift);
+    return newArr;
+}
+
+assert(firstAndLast([1, 2, 3, 4]), [1, 4], "Exercise 58");
+assert(firstAndLast(["JS", "is", "awesome"]), ["JS", "awesome"], "Exercise 58");
+assert(firstAndLast(["strawberry", "kiwi", "mango", "guava"]), ["strawberry", "guava"], "Exercise 58");
+addToDone("Exercise 58 is correct.")
+
+
