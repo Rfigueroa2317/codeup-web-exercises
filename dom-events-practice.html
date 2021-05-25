@@ -7,13 +7,20 @@
 
     </head>
     <body>
-    <h1 onclick="this.innerHTML='cereal!'">What is my favorite food?</h1><h1 onclick="changeColor(this)">Click to change color!</h1>
+<!--    <h1 onclick="this.innerHTML='cereal!'">What is my favorite food?</h1><h1 onclick="changeColor(this)">Click to change color!</h1>-->
 
+<!--        <button id="myBtn">Click Me!!</button>-->
+
+<!--        <input type="text" id="words" oninput="removeLetterFromH1()"/>-->
+
+<!--        <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="box">Mouse Over me</div>-->
+
+        <h1 onclick="this.innerHTML='popcorn'">What is my favorite movie food?</h1><h1 onclick="changeColor(this)">Click to change color!</h1>
         <button id="myBtn">Click Me!!</button>
-
-        <input type="text" id="words" oninput="removeLetterFromH1()"/>
-
+        <input type="text" id="words" oninput="addLetterToH1()"/>
         <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="box">Mouse Over me</div>
+        <input placeholder="Enter some text" name="name">
+        <p id="values"></p>
 
         <script src="js/dom-events-practice.js"></script>
     </body>
