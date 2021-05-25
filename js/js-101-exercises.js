@@ -935,19 +935,6 @@ assert(forth(["JS", "is", "awesome", "right?"]), "right?", "Exercise 53");
 addToDone("Exercise 53 is correct.")
 
 
-// Exercise 53
-// Write a function definition named forth that takes in sequence and returns the forth value of that sequence.
-
-function forth(arr){
-    return arr[3];
-}
-
-assert(forth("ubuntu"), "n", "Exercise 53");
-assert(forth([1, 2, 3, 4]), 4, "Exercise 53");
-assert(forth(["JS", "is", "awesome", "right?"]), "right?", "Exercise 53");
-addToDone("Exercise 53 is correct.")
-
-
 // Exercise 54
 // Write a function definition named last that takes in sequence and returns the last value of that sequence.
 
