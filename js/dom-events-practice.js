@@ -16,14 +16,17 @@ function changeColor(obj) {
     function changeBackgroundColorToLightBlue(){
         document.querySelector('body').style.background ='LightBlue';
     }
+
+    // ***  THESE ONES BELOW ARE NOT NECESSARY UNLESS YOU WANT TO TAKE OUT LETTERS ON THE HEADER *** \\
+
 // function removeLetterFromH1(){
 //     var h1 = document.querySelector('h1')
 //     h1.textContent = h1.textContent.slice(0, -1);
 // }
-    function addLetterToH1(){
-        var h1 = document.querySelector('h1')
-        h1.textContent = h1.textContent.slice(0, 1);
-    }
+//     function addLetterToH1(){
+//         var h1 = document.querySelector('h1')
+//         h1.textContent = h1.textContent.slice(0, 1);
+//     }
 //
 // function mOver(obj) {
 //     obj.innerHTML = "GET OFF ME!"
@@ -47,3 +50,4 @@ function changeColor(obj) {
 function updateValue(e){
     log.textContent = e.target.value;
 }
+
