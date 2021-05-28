@@ -1433,4 +1433,123 @@ assert(onlyNegativeOdds([3, 3, 4, 6]), [], "Exercise 80");
 assert(onlyNegativeOdds([2, -3, 4, -1, -4]), [-3, -1], "Exercise 80");
 addToDone("Exercise 80 is correct.")
 
+// Exercise 81
+// Write a function definition named shortestString that takes in an array of strings and returns the shortest string in the array.
+
+function shortestString(input){
+    var a = 'abcdefg';
+    var i;
+    for(i=0;i<input.length;i++){
+        if(input[i].length < a.length){
+            a = input[i];
+        }
+    }
+    return a;
+}
+
+
+assert(shortestString(["kiwi", "mango", "strawberry"]), "kiwi", "Exercise 81");
+assert(shortestString(["hello", "everybody"]), "hello", "Exercise 81");
+assert(shortestString(["mary", "had", "a", "little", "lamb"]), "a", "Exercise 81");
+addToDone("Exercise 81 is correct.")
+
+
+// Exercise 82
+// Write a function definition named longestString that takes in sequence of strings and returns the longest string in the array.
+
+function longestString(input){
+    var a = '';
+    var i;
+    for(i=0;i<input.length;i++){
+        if(input[i].length > a.length){
+            a = input[i];
+        }
+    }
+    return a;
+}
+
+
+assert(longestString(["kiwi", "mango", "strawberry"]), "strawberry", "Exercise 82");
+assert(longestString(["hello", "everybody"]), "everybody", "Exercise 82");
+assert(longestString(["mary", "had", "a", "little", "lamb"]), "little", "Exercise 82");
+addToDone("Exercise 82 is correct.")
+
+
+// Exercise 83
+// Write a function definition named getUniqueValues that takes in an array and returns an with only the unique values from that array.
+
+function getUniqueValues(input){
+    var a = [];
+    var i;
+    for(i=0;i<input.length;i++){
+        if(a.includes(input[i])){
+            continue;
+        }
+        a.push(input[i]);
+    }
+    return a;
+}
+
+assert(getUniqueValues(["ant", "ant", "mosquito", "mosquito", "ladybug"]), ["ant", "mosquito", "ladybug"], "Exercise 83");
+assert(getUniqueValues(["b", "a", "n", "a", "n", "a", "s"]), ["b", "a", "n", "s"], "Exercise 83");
+assert(getUniqueValues(["mary", "had", "a", "little", "lamb", "little", "lamb", "little", "lamb"]), ["mary", "had", "a", "little", "lamb"], "Exercise 83");
+addToDone("Exercise 83 is correct.")
+
+
+// Exercise 84
+// Write a function definition named elementsTimesTwo that takes in an array of numbers and returns an array with each value multiplied by 2.
+
+function elementsTimesTwo(input){
+    var i;
+    for(i=0;i<input.length;i++){
+        input[i] *= 2;
+    }
+    return input;
+}
+
+// not adding the i on the objects bracket can brake your answer page***
+
+assert(elementsTimesTwo([1, 2, 3]), [2, 4, 6], "Exercise 84")
+assert(elementsTimesTwo([0, 0, 0]), [0, 0, 0], "Exercise 84")
+assert(elementsTimesTwo([5, 10, 15]), [10, 20, 30], "Exercise 84")
+addToDone("Exercise 84 is correct.")
+
+
+// Exercise 85
+// Write a function named flatten that takes in an array of arrays. Return the flattened array.
+
+function flatten(input){
+    var a = [];
+    var i;
+    for(i=0;i<input.length;i++){
+        a;
+    }
+    return [].concat.apply([], input);
+}
+
+assert(flatten([[1, 2], [3, 4], [5, 6]]), [1, 2, 3, 4, 5, 6], "Exercise 85");
+assert(flatten([[1, 2, 3], [1, 2, 3], [1, 2, 3]]), [1, 2, 3, 1, 2, 3, 1, 2, 3], "Exercise 85");
+assert(flatten([["tomato", "mango", "kiwi"], ["eggplant", "broccoli"]]), ["tomato", "mango", "kiwi", "eggplant", "broccoli"], "Exercise 85");
+addToDone("Exercise 85 is correct.")
+
+
+
+// Exercise 86
+// Write a function definition named addOneToArray that adds one to every number in an array
+
+function addOneToArray(input){
+    var a = [];
+    var i;
+    for(i=0;i<input.length;i++){
+        input[i]++;
+    }
+    return input;
+}
+
+
+assert(addOneToArray([1, 2, 3]), [2, 3, 4], "Exercise 86");
+assert(addOneToArray([4, 4, 4]), [5, 5, 5], "Exercise 86");
+assert(addOneToArray([9, 10, 11]), [10, 11, 12], "Exercise 86");
+addToDone("Exercise 86 is correct.")
+
 
