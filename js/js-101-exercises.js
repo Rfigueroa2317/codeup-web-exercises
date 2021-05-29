@@ -1552,4 +1552,150 @@ assert(addOneToArray([4, 4, 4]), [5, 5, 5], "Exercise 86");
 assert(addOneToArray([9, 10, 11]), [10, 11, 12], "Exercise 86");
 addToDone("Exercise 86 is correct.")
 
+// Exercise 87
+// Write a function named getPaperTitle that takes in a object and returns the title property
+
+function getPaperTitle(input){
+    return input.title;
+}
+
+assert(getPaperTitle(tukeyPaper), "The Future of Data Analysis", "Exercise 87");
+assert(getPaperTitle(thomasPaper), "A mathematical model of glutathione metabolism", "Exercise 87");
+addToDone("Exercise 87 is correct.")
+
+
+// Exercise 88
+// Write a function named getYearPublished that takes in an objects and returns the value behind the "year_published" key.
+
+function getYearPublished(input){
+    return input.year_published;
+}
+
+assert(getYearPublished(tukeyPaper), 1962, "Exercise 88");
+assert(getYearPublished(thomasPaper), 2008, "Exercise 88");
+addToDone("Exercise 88 is correct.")
+
+
+// this code defines a JS object with information about a book.
+const book = {
+    "title": "Genetic Algorithms and Machine Learning for Programmers",
+    "price": 36.99,
+    "author": "Frances Buontempo"
+}
+
+// Exercise 89
+// Write a function named getPrice that takes in a object and returns the price
+
+function getPrice(input){
+    return input.price;
+}
+
+assert(getPrice(book), 36.99, "Exercise 89");
+addToDone("Exercise 89 is complete.")
+
+
+
+// Exercise 90
+// Write a function named getBookAuthor that takes in a object (the above declared book variable) and returns the author's name
+
+function getBookAuthor(input){
+    return input.author;
+}
+
+assert(getBookAuthor(book), "Frances Buontempo", "Exercise 90");
+addToDone("Exercise 90 is complete.")
+
+
+// The next exercises work with a arrays of objects.
+// You'll see arrays of objects over and over again with data in a program.
+// Here is our arrays of objects.
+const books = [
+    {
+        "title": "Genetic Algorithms and Machine Learning for Programmers",
+        "price": 36.99,
+        "author": "Frances Buontempo"
+    },
+    {
+        "title": "The Visual Display of Quantitative Information",
+        "price": 38.00,
+        "author": "Edward Tufte"
+    },
+    {
+        "title": "Practical Object-Oriented Design",
+        "author": "Sandi Metz",
+        "price": 30.47
+    },
+    {
+        "title": "Weapons of Math Destruction",
+        "author": "Cathy O'Neil",
+        "price": 17.44
+    }
+]
+
+
+// Exercise 91
+// Write a function named getNumberOfBooks that takes in a array of objects and returns the number of objects in that array.
+
+function getNumberOfBooks(input){
+    return input.length;
+}
+
+assert(getNumberOfBooks(books), 4, "Exercise 91");
+addToDone("Exercise 91 is complete.")
+
+
+
+// Exercise 92
+// Write a function named totalOfBookPrices that takes in a array of objects and returns the sum total of all the book prices added together
+
+function totalOfBookPrices(input){
+    var a = 0;
+    var i;
+    for(i=0;i<input.length;i++){
+        a += input[i].price;
+    }
+    return a;
+}
+
+assert(totalOfBookPrices(books), 122.9, "Exercise 92")
+addToDone("Exercise 92 is complete.")
+
+
+// Exercise 93
+// Write a function named getAverageBookPrice that takes in a array of objects and returns the average book price.
+
+function getAverageBookPrice(input){
+    var a = 0;
+    var i;
+    for(i=0;i<input.length;i++){
+        a += input[i].price;
+    }
+    return a / input.length;
+}
+
+assert(getAverageBookPrice(books), 30.725, "Exercise 93");
+addToDone("Exercise 93 is complete.")
+
+
+// Exercise 94
+// Write a function called highestPriceBook that takes in the above defined array of objects "books" and returns the object containing the title, price, and author of the book with the highest priced book.
+// Hint: Much like sometimes start functions with a variable set to zero, you may want to create a object with the price set to zero to compare to each object's price in the array
+
+function highestPriceBook(input){
+    var a = 0;
+    var i;
+    for(i=0;i<input.length;i++){
+        a += input[i].price;
+    }
+    return input.length;
+}
+
+assert(highestPriceBook(books), {
+    "title": "The Visual Display of Quantitative Information",
+    "price": 38.00,
+    "author": "Edward Tufte"
+}, "Exercise 94");
+
+addToDone("Exercise 94 is complete")
+
 
