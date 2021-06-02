@@ -41,9 +41,9 @@ $('#orange').css('background-color','orange');
 //     'font-size': '20px',
 // });
 //
-$('h1, p, li').css({
-    'color': 'goldenrod',
-});
+// $('h1, p, li').css({
+//     'color': 'goldenrod',
+// });
 
 // $(document).ready(function(){
 //     alert(new Date());
@@ -53,7 +53,6 @@ $('h1, p, li').css({
 
 // Multiple Selectors \\
 
-// $('h1, p, li').css({
-//     'color': 'red',
-//
-// });
+$('h1, p, li').css({
+    'color': 'red',
+});
