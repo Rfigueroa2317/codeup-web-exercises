@@ -37,10 +37,22 @@ $('#pink').hide();
 
 // Element Selectors \\
 
-$('li').css({
-    'font-size': '20px',
-});
+// $('li').css({
+//     'font-size': '20px',
+// });
+//
+// $('h1, p, li').css({
+//     'color': 'goldenrod',
+// });
+//
+// $(document).ready(function(){
+//     alert(new Date());
+//     alert("h1 says 'JQuery exercises'");
+// });
 
-$('h1, p, li').css({
-    'color': 'goldenrod',
-});
+
+// Multiple Selectors \\
+
+// $('h1, p, li').css({
+//     'color': 'goldenrod',
+//
