@@ -53,7 +53,14 @@ $('#orange').css('background-color','orange');
 
 // Multiple Selectors \\
 
-$('h1, p, li').css({
-    'color': 'red',
+// look for ALL h1 AND all li and all p
+// $(h1, p, li)
+$('* h1, * p, * li').css({
+    'color': 'blue',
 });
 
+
+
+$('div p') // all paragraph elements inside of any div element
+$('div, p') // all divs AND all paragraphs
+$('div ul li') // ALL li's inside of any ul only if that ul is inside of any div
