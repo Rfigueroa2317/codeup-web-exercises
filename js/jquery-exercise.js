@@ -10,8 +10,8 @@ $('.show-me').show();
 $('#pink').css('background-color','pink');
 
 $('#orange').css('background-color','orange');
-
-$('#pink').hide();
+//
+// $('#pink').hide();
 
 // curriculum exercises \\
 // id selectors \\
@@ -41,10 +41,10 @@ $('#pink').hide();
 //     'font-size': '20px',
 // });
 //
-// $('h1, p, li').css({
-//     'color': 'goldenrod',
-// });
-//
+$('h1, p, li').css({
+    'color': 'goldenrod',
+});
+
 // $(document).ready(function(){
 //     alert(new Date());
 //     alert("h1 says 'JQuery exercises'");
@@ -54,5 +54,6 @@ $('#pink').hide();
 // Multiple Selectors \\
 
 // $('h1, p, li').css({
-//     'color': 'goldenrod',
+//     'color': 'red',
 //
+// });

@@ -97,8 +97,64 @@
 //     console.log("hey the DOM is finished loading")
 // })
 
-function tellTime(){
-    console.log(new Date());
-}
+// function tellTime(){
+//     console.log(new Date());
+// }
+//
+// $(document).ready(tellTime());
 
-$(document).ready(tellTime());
+// more jquery selectors \\
+
+// $('#blue').css({'color':'blue'});
+
+// any time you want to select multiple elements from the dom using jquery, all be within one quotation and separated by commas. It's very very similar to
+// $('p','div').css({
+//     'font-size':'3px'
+// })
+
+// interpolator: ${} inside of template literal is not the same as the
+// let myName = 'Ricardo'
+// let myTemplateLiteral = `Hello, my name is ${myName}. Nice to meet you`
+
+// selecting multiple elements
+// $('p,div').css({
+//     'font-size':'20px',
+//     'color': 'red'
+// })
+
+
+// two unrelated selectors share a string separated by a comma
+// $('#blue','.pink').css('font-family','Arial');
+//
+// $('div p').css('font-family', 'cursive')
+
+
+// .css('color','pink')
+// .css({
+//     'color':'orange',
+//     'font-family':'Montserrat'
+// })
+//
+// console.log('p','div').css({
+// //     'border':'3px, solid, orange'
+// // })
+
+// let firstPar = $('#blue');
+//
+// firstPar.css('color', 'pink')
+//
+// firstPar.hide();
+
+
+// asterics (*) \\
+
+// $('*').hide();
+// all the elements inside all my divs
+// $('div *').hide();
+
+// all divs inside all elements
+// $('* div').css('font-size','50px');
+//
+// $('ul *').css('color','red');
+//
+// let allMyDiv = $('* div');
