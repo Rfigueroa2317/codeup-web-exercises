@@ -1,78 +1,75 @@
-body{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-}
-.loginbox{
-    width: 320px;
-    height: 420px;
-    background: black;
-    color: lightblue;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-}
-
-/*.avatar{*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    border-radius: 50%;*/
-/*    position: absolute;*/
-/*    top: -50px;*/
-/*    left: calc(50% - 50px);*/
-/*}*/
-
-h1{
-    margin: 0;
-    padding: 0 0 2px;
-    text-align: center;
-    font-size: 22px;
-}
-
-.loginbox p{
-    margin: 0;
+* {
     padding: 0;
-    font-weight: bold;
+    margin: 0;
 }
 
-.loginbox input{
+body, html {
+    height: 100%;
     width: 100%;
-    margin-bottom: 30px;
+    background-color: #cbffcd;
+    font-family: Arial, Ubuntu, sans-serif;
 }
 
-.loginbox input[type="text"], input[type="password"]{
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    height: 30px;
-    font-size: 16px;
+form {
+    /* This form should be separated from other elements by 1em */
+    border-radius: 1em;
+    /* There must be 1em between the content and the border of this element */
 }
 
-.loginbox input[type="submit"]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: gray;
-    font-size: 20px;
-    border-radius: 20px;
+fieldset {
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    /* There must be 1em between the content and the border of this element */
+    /* It should have no border */
+    /* Its background should be white */
+    background-color: white;
+    border: 0;
+    padding: 1em;
+    margin: 1em;
 }
 
-.loginbox input[type="submit"]:hover{
-    cursor:pointer;
-    background:darkgreen;
-    color: green;
+.width-80 {
+    /* The element with this class should 80% of the width and it must be centered */
+    /* Read how to center elements with margin here: http://learnlayout.com/margin-auto.html*/
+    width: 80%;
+
 }
 
-.loginbox a{
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
+.form-group {
+    /* This element must use 100% of the width */
+    /* It should have a separation of .5em from elements on top of it and below it*/
 }
 
-.loginbox a:hover{
-    color: red;
+.form-label {
+    /* The text of a label must be bold */
 }
+
+.btn-block {
+    /* This element should use 100% of the width */
+    width: 100%;
+    margin-left: 1em;
+}
+
+.btn {
+    /* There must be a separation of 8px between the text and the border of this element */
+    /* The text color of this element should be white and bold */
+    /* The border of this element should be 1px, and its color should be light grey */
+    background-color: #0fb784;
+    padding: 8px;
+    margin: 8px;
+}
+
+.form-control {
+    /* There must be 4px on top of the text and below the text of an input with this class */
+    /* It should have a separation of .5em from elements on top of it and below it */
+
+    /* You'll need to use the `calc` function to make the width of this element match the width of the button */
+    /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
+    /* HINT: Calculate based on the padding of the `.btn` class */
+    /* HINT: Examples are available at: https://glitch.com/~input-button-width */
+    width: 100%;
+}
+
+
+
