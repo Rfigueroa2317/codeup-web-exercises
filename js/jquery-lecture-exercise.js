@@ -1,4 +1,4 @@
-(function(){ // *** CASEY'S TODO FOR DOM-LECTURE ON 6/3/2021 ***
+(function(){ // *** CASEY'S TODO FOR JQUERY-LECTURE ON 6/3/2021 ***
     let jqElements = $('.jqClass');
     let backgroundBlue = 'lightblue';
     let backgroundReset = '';
@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function addListeners(){
     //get the elements to add listener and change image
     let cardContainers = Array.from(document.querySelectorAll(".col-md-3"));
-    addEvents(cardContainers, 'assets/jazz-music-rubber-duck.jpg', 'mouseover');
-    addEvents(cardContainers, 'assets/question.png', 'mouseout');
+    addEvents(cardContainers, 'images/jazz-music-rubber-duck.jpg', 'mouseover');
+    addEvents(cardContainers, 'images/question.png', 'mouseout');
 }
 //add mouseover/mouseout events to all selected elements
 function addEvents(cardContainers, imgPath, listenerType){
