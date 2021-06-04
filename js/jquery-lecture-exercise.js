@@ -19,8 +19,8 @@
     function addListeners(){
         //get the elements to add listener and change image
         let cardContainers = Array.from(document.querySelectorAll(".col-md-3"));
-        addEvents(cardContainers, 'assets/jazz-music-rubber-duck.jpg', 'mouseover');
-        addEvents(cardContainers, 'assets/question.png', 'mouseout');
+        addEvents(cardContainers, 'images/jazz-music-rubber-duck.jpg', 'mouseover');
+        addEvents(cardContainers, 'images/question.png', 'mouseout');
     }
     //add mouseover/mouseout events to all selected elements
     function addEvents(cardContainers, imgPath, listenerType){
@@ -37,6 +37,10 @@
     //actual function to swap images
     function changeImage(card, imgPath){
         card.setAttribute('src', imgPath);
+        $('div, img').hover(
+            function(){
+                $(this).getElementById('')
+        })
     }
 })();
 
