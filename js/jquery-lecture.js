@@ -164,21 +164,30 @@
 
 // JQUERY EVENT LISTENERS \\ addEventListener()
 
-(function (){
-    // get the target
-    let header = document.querySelector('#override-bootstrap');
-
-    //define the listener
-    let listener = function (){
-        console.log('event fired')
-        header.style.backgroundColor = 'blue';
-        header.querySelector('#main-title').innerText = "DOM DOM DOMMMMMM";
-    }
-
-    //bind the event, target, listener together
-    header.addEventListener('click',listener);
-
-})()
+// (function (){
+//     // get the target
+//     let header = document.querySelector('#override-bootstrap');
+//
+//     //define the listener
+//     let listener = function (){
+//         console.log('event fired')
+//         header.style.backgroundColor = 'blue';
+//         header.querySelector('#main-title').innerText = "DOM DOM DOMMMMMM";
+//     }
+//
+//     //bind the event, target, listener together
+//     header.addEventListener('click',listener);
+//
+// })()
 
 //-------------------------------------------------------------------\\
+
+// *** KEYBOARD EVENTS *** \\
+
+//  keyup
+
+    Array.from(document.getElementById('input'))
+        .forEach((i) => {
+
+        })
 

@@ -14,7 +14,7 @@
     //make sure the DOM is loaded first
     document.addEventListener("DOMContentLoaded", function() {
         addListeners();
-        alert('DOM is fully loaded');
+        console.log('DOM is fully loaded');
     });
     //parent method for adding all listeners
     function addListeners(){
@@ -28,7 +28,7 @@
         cardContainers.forEach((cc) => {
             let card = cc;
             //create listener which will call function change the image
-            e.addEventListener('mouseover', changeImage())
+            addEventListener('mouseover',changeImage())
             let listener = function (event) {
                 let cardImg = card.querySelector(".card .card-img-top");
                 changeImage(cardImg, imgPath);
@@ -64,6 +64,7 @@ function addEvents(cardContainers, imgPath, listenerType){
     cardContainers.forEach((cc) => {
         let card = cc;
         //create listener which will call function change the image
+        addEventListener('mouseover',changeImage)
         let listener = function (event) {
             let cardImg = card.querySelector(".card .card-img-top");
             changeImage(cardImg, imgPath);
