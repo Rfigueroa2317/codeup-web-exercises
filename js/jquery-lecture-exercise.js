@@ -14,6 +14,7 @@
     //make sure the DOM is loaded first
     document.addEventListener("DOMContentLoaded", function() {
         addListeners();
+        alert('DOM is fully loaded');
     });
     //parent method for adding all listeners
     function addListeners(){
@@ -27,6 +28,7 @@
         cardContainers.forEach((cc) => {
             let card = cc;
             //create listener which will call function change the image
+            e.addEventListener('mouseover', changeImage())
             let listener = function (event) {
                 let cardImg = card.querySelector(".card .card-img-top");
                 changeImage(cardImg, imgPath);
@@ -72,4 +74,8 @@ function addEvents(cardContainers, imgPath, listenerType){
 //actual function to swap images
 function changeImage(card, imgPath){
     card.setAttribute('src', imgPath);
+    $('div, img').hover(
+        function(){
+            $(this).getElementById('')
+        })
 }
