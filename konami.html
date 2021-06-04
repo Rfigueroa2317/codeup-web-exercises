@@ -11,8 +11,16 @@
             "use strict";
 
             $(document).keyup(function(event){
-                console.log(event.keyCode);
+                // console.log(event.keyCode);
+                switch (event.keyCode){
+                    case 37:
+                        console.log('left key is pressed');
+                        break;
+                }
+                alert('left key pressed');
             });
+
+
         </script>
     </body>
 </html>
