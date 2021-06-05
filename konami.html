@@ -20,12 +20,11 @@
 
             $(document).keyup(function(event){
                 // console.log(event.keyCode);
-                switch (event.keyCode){
-                    case 37:
-                        console.log('left key is pressed');
-                        break;
+                if(newArr === KonamiCode){
+                    alert("You've put the code!")
+                }else{
+                    alert("sorry, you get nothing")
                 }
-                alert('left key pressed');
             });
 
 
