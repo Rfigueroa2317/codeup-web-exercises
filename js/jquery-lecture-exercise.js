@@ -125,7 +125,11 @@ $('.col-md-3').hover(hoverIn, hoverOut);
 //     });
 // })
 
-
+$('.list-group-item').click(function (){
+    $(this).css('text-transform','uppercase');
+    $(this).css('color','red');
+    $(this).css('background-color','yellow');
+})
 
 
 
