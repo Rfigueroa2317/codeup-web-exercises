@@ -90,11 +90,52 @@ function changeImage(card, imgPath) {
 }
 
 
+// TODO: Add a data-attribute to each card container (.col-md-3)
+//  -> Give that data-attribute a value of 1-4 (moving top to bottom in the html)
+//  -> Now, when a user hovers over one of the .col-md-3 containers, you should replace the text inside #card-title with the data-attribute value
+//  -> When the user hovers out, the data-attribute value should be replaced with the original text ("Card")
+
+let hoverIn = function(){
+    // let attributeValue = $(this).attr('data-attribute')
+    // // console.log(attributeValue);
+    // $(this).find('.card-title').text(attributeValue);
+    // // console.log($('.card-title').text());
+    $(this)
+        .find('.card-title')
+        .text($(this))
+        .attr('data-attribute');
+    // this is the refactor way. look into it as it may be better to write it like this. \\
+}
+
+let hoverOut = function(){
+    $(this).find('.card-title').text('card');
+}
+$('.col-md-3').hover(hoverIn, hoverOut);
+
+
+// TODO: When an li with the .list-group-item class is clicked, replace the text with the same text, but uppercased
+//  -> ALSO, change the background of the li to a new color
+//  -> When the li is clicked again, reset the li background color to its original color
+//      -> Don't worry about changing the text back
+
+$(document).ready(function(){
+    $(this).toggleClass.click('.list-group-item').css({
+        'text-transform': 'uppercase',
+        'color':'red'
+    });
+})
+
+
+
+
+
+
+
 // *** DOM ASSESSMENT PRACTICE *** \\
 
 // TODO: When the user clicks the button with the id of 'submitBtn,' the background color of #override-bootstrap changes to 'red'
 
-$(this).getElementById('submitBtn').css()
+$(this).getElementById('submitBtn').css()()
 
 
 //answer #1\\
