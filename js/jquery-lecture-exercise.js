@@ -118,12 +118,13 @@ $('.col-md-3').hover(hoverIn, hoverOut);
 //  -> When the li is clicked again, reset the li background color to its original color
 //      -> Don't worry about changing the text back
 
-$(document).ready(function(){
-    $(this).toggleClass.click('.list-group-item').css({
-        'text-transform': 'uppercase',
-        'color':'red'
-    });
-})
+// $(document).ready(function(){
+//     $(this).toggleClass.click('.list-group-item').css({
+//         'text-transform': 'uppercase',
+//         'color':'red'
+//     });
+// })
+
 
 
 
