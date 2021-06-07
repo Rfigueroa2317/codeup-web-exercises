@@ -6,24 +6,31 @@
     <body>
         <h1 id="main-title" class="container-fluid" >Konami Code</h1>
 
-        <script src="/js/jquery.js"></script>
+<!--        <script src="/js/jquery.js"></script>-->
         <script>
             "use strict";
+
+
+
+            // $('#main-title').click(function(){
+            //     var h1Contents = $('#main-title').html();
+            //     alert(h1Contents);
+            // })
 
             // $('#main-title').css({
             //     'color': 'red',
             //     'font-style': 'italic',
             // })
 
-            // let KonamiCode = [38,38,40,40,37,39,37,39,'a','b']
-            // let newArr = [];
-            //
-            // $(document).keyup(function(event){
-            //     // console.log(event.keyCode);
-            //     $(KonamiCode).keyup(function(){
-            //         alert("You get 30 lives!")
-            //     })
-            // });
+            let KonamiCode = [38,38,40,40,37,39,37,39,'a','b']
+            let newArr = [];
+
+            $(document).keyup(function(event){
+                // console.log(event.keyCode);
+                $(KonamiCode).keyup(function(){
+                    alert("You get 30 lives!")
+                })
+            });
 
 
 
