@@ -142,12 +142,32 @@ $('.list-group-item').click(function (){
 //  -> When the user clicks #submitBtn, redirect the page to the value of #redirect-url
 //  -> HINT: You can either add a new input or change the id of an existing input element to #redirect-url to save time
 
-$('#submitBtn').click(function(){
-    let url = $('#redirect-url').val();
-})
+// $('#submitBtn').click(function(){
+//     let url = $('#redirect-url').val();
+// })
 
 
 // TODO: After a 2 second delay (BOM), when the user loads the page, change #main-title to a value of your choosing (change text, background color, what have you)!
+
+
+//====================*** daily warmup 6/8/21 ***====================\\
+
+// TODO: When the user clicks #submitBtn, log to the console the values of #first, #last, and #handleField
+//  -> If any of the fields are empty, alert the user to fill the empty control (be sure to tell them which control was empty)
+//submitBtn on line 142
+
+$('#submitBtn').click(function (){
+    console.log("There is no 'value' on this html. Please add one");
+    $('values').attr('')
+})
+
+// console.log($("#submitBtn").val()); this is one way to do it. Look into val and see what it can do.
+
+// $("button").click(function(){
+//     $("img").attr("width","500");
+// });
+
+
 
 
 // *** DOM ASSESSMENT PRACTICE *** \\
