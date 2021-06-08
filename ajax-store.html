@@ -29,11 +29,12 @@
     console.log("data/inventory.json")
     $.ajax("data/inventory.json", {
         type: "GET",
-        data: "data/inventory.json",
+        // data: "data/inventory.json",
         // success: function () {
         //     // alert("This worked!")
         // }
     })
+    console.log($.ajax("data/inventory.json"))
 
     // GET request - getting information from somewhere
 // console.log($.ajax("https://jsonplaceholder.typicode.com/comments"));
