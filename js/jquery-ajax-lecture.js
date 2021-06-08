@@ -33,7 +33,7 @@
 
 // GET request - getting information from somewhere
 // console.log($.ajax("https://jsonplaceholder.typicode.com/comments"));
-
+//
 // $.ajax("https://jsonplaceholder.typicode.com/comments",{
 //     type: "POST",
 //     data: {
@@ -124,28 +124,28 @@ $("#click-me").click(function () {
 //     })
 // })
 
-$.ajax("https://jsonplaceholder.typicode.com/posts").done(function (data){
-    console.log(data);
-    let dataId = data[25].id;
-    console.log(dataId);
-    // make a request to the comments section and look for only the comments that have an id of the one you just got from the
-    $.ajax(`https://jsonplaceholder.typicode.com/comments?postsId=${dataId}`).done(function (commentsData){
-        console.log(commentsData);
-    })
-}).fail(function (){
-    alert("hey something went wrong");
-})
-
+// $.ajax("https://jsonplaceholder.typicode.com/posts").done(function (data){
+//     console.log(data);
+//     let dataId = data[25].id;
+//     console.log(dataId);
+//     // make a request to the comments section and look for only the comments that have an id of the one you just got from the
+//     $.ajax(`https://jsonplaceholder.typicode.com/comments?postsId=${dataId}`).done(function (commentsData){
+//         console.log(commentsData);
+//     })
+// }).fail(function (){
+//     alert("hey something went wrong");
+// })
 //
-$.get("url goes here", {
-
-}).done(function (data){
-    // do something with the data that you got back from api
-})
-
-$.post("url", {
-    title: "my title",
-
-})
+// //
+// $.get("url goes here", {
+//
+// }).done(function (data){
+//     // do something with the data that you got back from api
+// })
+//
+// $.post("url", {
+//     title: "my title",
+//
+// })
 
 // TODO:
