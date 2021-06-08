@@ -26,6 +26,27 @@
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
 
+    console.log("data/inventory.json")
+    $.ajax("data/inventory.json", {
+        type: "GET",
+        data: "data/inventory.json",
+        // success: function () {
+        //     // alert("This worked!")
+        // }
+    })
+
+    // GET request - getting information from somewhere
+// console.log($.ajax("https://jsonplaceholder.typicode.com/comments"));
+//
+// $.ajax("https://jsonplaceholder.typicode.com/comments",{
+//     type: "POST",
+//     data: {
+//         title: "my trip to antartica",
+//         article: "lorem ipsum blah blah blah. antartica is awesome"
+//     }
+//
+
+
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
