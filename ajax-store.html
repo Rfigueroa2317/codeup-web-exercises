@@ -2,6 +2,16 @@
 <html>
 <head>
     <title>Online Store</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: darkgreen;
+        }
+
+        tr td {
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
 
@@ -27,12 +37,8 @@
     // TODO: Create an AJAX GET request for the file under data/inventory.json
 
     console.log("data/inventory.json")
-    $.ajax("data/inventory.json", {
-        type: "GET",
-        // data: "data/inventory.json",
-        // success: function () {
-        //     // alert("This worked!")
-        // }
+    $.get("data/inventory.json", {
+        type: "GET"
     })
     console.log($.ajax("data/inventory.json"))
 
@@ -52,6 +58,29 @@
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
+
+    $(document).ready(function (){
+        $.getJSON("data/inventory.json",
+            function (data) {
+                let inventory = '';
+
+                $.each(data, function (key,value){
+
+                    inventory += '<tr>';
+                    inventory += '<td>' +
+                        value.title + '</td>';
+
+                    inventory += '<td>' +
+                        value.quantity + '</td>';
+
+                    inventory += '<td>' +
+                        value.price + '</td>';
+                });
+                $("#products").append(inventory);
+            });
+    });
+
+
 })();
 </script>
 
