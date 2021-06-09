@@ -148,4 +148,8 @@ $("#click-me").click(function () {
 //
 // })
 
+
+// *** different way of doing it *** \\
+// write a function first
+// then do a $.ajax("")
 // TODO:
