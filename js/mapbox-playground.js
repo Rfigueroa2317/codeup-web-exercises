@@ -13,10 +13,11 @@ var map = new mapboxgl.Map({
     center: [-98.4936, 29.4241],
     zoom: 12
 });
-
+console.log(map)
 function initMapbox(){
     mapboxgl.accessToken =  MAPBOX_TOKEN;
     map = getMap();
+    console.log(map)
 }
 
 // call function to create method and give initial point
