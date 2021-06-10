@@ -76,4 +76,19 @@ let popup = new mapboxgl.Popup()
 // .7 Make sure the info window does not display until the marker has been clicked on.
 // HINT HINT: click event ***
 
-
+let raysPizzeriaInfo = {
+    address: '5252 Fredericksburg Rd, San Antonio, TX 78229',
+    popupHTML: "<p>Ray's Pizzeria</p>"
+}
+function placeMarkerAndPopup(info, token, map) {
+    geocode(info.address, token).then(function(coordinates) {
+        var popup = new mapboxgl.Popup()
+            .setHTML(info.popupHTML);
+        var marker = new mapboxgl.Marker()
+            .setLngLat(coordinates)
+            .addTo(map)
+            .setPopup(popup);
+        popup.addTo(map);
+    });
+}
+placeMarkerAndPopup(raysPizzeriaInfo, mapboxToken, map);

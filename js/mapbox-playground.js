@@ -27,7 +27,7 @@ let marker = setMarker([-98.4936, 29.4241]);
 addMapEvent(marker);
 
 let geocoder = setGeocoder();
-addGeocoderToMap(geocoder)
+addGeocoderToMap(geocoder);
 addGeocoderEvent(geocoder);
 setPopup("This is my popup! woo!");
 //creates and returns a new GeoCoder (search box)
