@@ -3,6 +3,8 @@ const mapboxToken = 'pk.eyJ1IjoicmZpZ3Vlcm9hMjMxNyIsImEiOiJja3BwbXgwMGIxNWQ5Mnd1
 // *** mapbox playground token ***
 // pk.eyJ1IjoicmZpZ3Vlcm9hMjMxNyIsImEiOiJja3BwbjhjaXowMGszMnZtbGl0bmpuZGcyIn0.-Z7O25kIRTpqkD5BG8SiFg
 
+// ============ *** ===== CLASS NOTES ===== *** =============== \\
+
 mapboxgl.accessToken = mapboxToken;
 
 var map = new mapboxgl.Map({
@@ -11,6 +13,11 @@ var map = new mapboxgl.Map({
     center: [-98.4936, 29.4241],
     zoom: 12
 });
+
+function initMapbox(){
+    mapboxgl.accessToken =  MAPBOX_TOKEN;
+    map = getMap();
+}
 
 // call function to create method and give initial point
 let marker = setMarker([-98.4936, 29.4241]);
@@ -52,10 +59,19 @@ function addGeocoderEvent(geocoder){
     })
 }
 
+function getMap(){
+    return new mapboxgl.Map({
+        container:'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        center:[-98.4936, 29.4241],
+        zoom: 12
+    })
+}
+
 // creates the marker
 function setMarker(point){
     return new mapboxgl.Marker().setLngLat(point)
-        .addTo(map);
+        .addTo(map); // returns this.marker
 }
 
 // adds event to map that changes location of marker based on where the user clicks
@@ -71,4 +87,26 @@ function setPopup(textDetails){
     let popup = new mapboxgl.Popup().setHTML(`<p>#{textDetails}</p>`).addTo(map);
 
     marker.setPopup(popup);
+}
+
+// adds click event to map with a callback...
+
+function setMapClickEvent(marker){
+    map.on('click', function (event){
+        marker.setLngLat(event.lngLat)
+            .addTo(map);
+
+        let point = [event.lngLat.lng,event.lngLat.lat];
+
+        getReverseGeocode(point,marker);
+    })
+}
+
+function getReverseGeocode(point, marker){
+    $.ajax({
+        url: `https://api.mapbox.com/geocoding/v5/mapbox.places/${point}.json?access_token=${mapboxgl.accessToken}`,
+        success: function(data){
+            marker.setPopup(getPopup(data.features[0].place_name)); // This will only execute once the success callback is invoked // It guarantees that the response is returned AND successful before trying to do anything with the expected data
+        }
+    })
 }
