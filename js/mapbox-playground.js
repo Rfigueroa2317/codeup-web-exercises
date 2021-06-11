@@ -103,11 +103,15 @@ function setMapClickEvent(marker){
     })
 }
 
+function getPopup(textDetails){
+    return new mapboxgl.Popup()
+}
+
 function getReverseGeocode(point, marker){
     $.ajax({
         url: `https://api.mapbox.com/geocoding/v5/mapbox.places/${point}.json?access_token=${mapboxgl.accessToken}`,
         success: function(data){
-            marker.setPopup(getPopup(data.features[0].place_name)); // This will only execute once the success callback is invoked // It guarantees that the response is returned AND successful before trying to do anything with the expected data
+            marker.setPopup(getPopup(data.features[0].place_name)).togglePopup(); // This will only execute once the success callback is invoked // It guarantees that the response is returned AND successful before trying to do anything with the expected data
         }
     })
 }
