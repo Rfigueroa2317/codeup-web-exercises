@@ -34,7 +34,7 @@
             // })
 
 
-            let konamiCode = ['38', '38', '40', '40', '37', '39', '37', '39', '65', '66']
+            let konamiCode = ['38', '38', '40', '40', '37', '39', '37', '39', '66', '65']
             let newArr = [];
 
             // $("#hopesThisWorks").keyup(function(event){
@@ -52,9 +52,8 @@
             // })
 
             $(document).ready(function () {
-
                 $("#hopesThisWorks").keyup(function () {
-                    if (konamiCode) {
+                    if (''.code === konamiCode) {
                         alert('A key was pushed!')
                     } else {
                         alert("Damn dude you got it wrong!")
