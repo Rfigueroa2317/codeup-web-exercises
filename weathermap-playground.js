@@ -15,7 +15,7 @@
 // });
 
 $.ajax({
-    url:"api.openweathermap.org/data/2.5/forecast",
+    url:"http://api.openweathermap.org/data/2.5/forecast",
     type: "GET",
     data: {
         APPID: OPEN_WEATHERMAP_TOKEN,
@@ -27,3 +27,4 @@ $.ajax({
         console.log(data);
     }
 })
+
