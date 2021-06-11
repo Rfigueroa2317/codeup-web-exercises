@@ -13,14 +13,19 @@
                 border-radius: 5px;
             }
         </style>
+        <script src="jquery/jquery-2.2.4.js"></script>
+
     </head>
     <body>
-        <h1 id="main-title" class="container-fluid" >KONAMI CODE</h1>
+        <h1 id="main-title" class="container-fluid">KONAMI CODE</h1>
+        <form>
+            <input type="text" id="hopesThisWorks"/>
 
-<!--        <script src="/js/jquery.js"></script>-->
+        </form>
+
+        <!--        <script src="/js/jquery.js"></script>-->
         <script>
             "use strict";
-
 
 
             // $('#main-title').click(function(){
@@ -29,28 +34,37 @@
             // })
 
 
-            // let KonamiCode = ['38','38','40','40','37','39','37','39','65','66']
-            // let newArr = [];
-            //
-            // $(document).keyup(function(event){
+            let konamiCode = ['38', '38', '40', '40', '37', '39', '37', '39', '65', '66']
+            let newArr = [];
+
+            // $("#hopesThisWorks").keyup(function(event){
             //     // console.log(event.keyCode);
-            //     $(KonamiCode).keyup(function(){
+            //     $(konamiCode).keyup(function(){
             //         alert("You get 30 lives!")
             //     })
             // });
-            let key = "65";
-            $(document).keyup(function (event){
-                if(key.keyCode === "65"){
-                    console.log("The letter 'a' has been pressed")
-                }
+            // let key = "65";
+            // $(document).keyup(function (event){
+            //     if(key.keyCode === "65"){
+            //         console.log("The letter 'a' has been pressed")
+            //     }
+            //
+            // })
 
+            $(document).ready(function () {
+
+                $("#hopesThisWorks").keyup(function () {
+                    if (konamiCode) {
+                        alert('A key was pushed!')
+                    } else {
+                        alert("Damn dude you got it wrong!")
+                    }
+                })
             })
 
 
-
-
         </script>
-        <script src="../oberon-dom-assessment/jquery-2.2.4.js"></script>
+        <script src="jquery/jquery-2.2.4.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous"></script>
