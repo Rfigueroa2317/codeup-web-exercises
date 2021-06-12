@@ -1,11 +1,11 @@
-const mapboxToken = 'pk.eyJ1IjoicmZpZ3Vlcm9hMjMxNyIsImEiOiJja3BwbXgwMGIxNWQ5Mnd1ZWo3aTlxNjBkIn0.kqbbHqqF_z-Gss77NrYrBA';
+// const mapboxToken = 'pk.eyJ1IjoicmZpZ3Vlcm9hMjMxNyIsImEiOiJja3BwbXgwMGIxNWQ5Mnd1ZWo3aTlxNjBkIn0.kqbbHqqF_z-Gss77NrYrBA';
 
 // *** mapbox playground token ***
 // pk.eyJ1IjoicmZpZ3Vlcm9hMjMxNyIsImEiOiJja3BwbjhjaXowMGszMnZtbGl0bmpuZGcyIn0.-Z7O25kIRTpqkD5BG8SiFg
 
 // ============ *** ===== CLASS NOTES ===== *** =============== \\
 
-mapboxgl.accessToken = mapboxToken;
+mapboxgl.accessToken = MAPBOX_TOKEN;
 
 var map = new mapboxgl.Map({
     container: 'map',
@@ -107,11 +107,11 @@ function getPopup(textDetails){
     return new mapboxgl.Popup()
 }
 
-function getReverseGeocode(point, marker){
-    $.ajax({
-        url: `https://api.mapbox.com/geocoding/v5/mapbox.places/${point}.json?access_token=${mapboxgl.accessToken}`,
-        success: function(data){
-            marker.setPopup(getPopup(data.features[0].place_name)).togglePopup(); // This will only execute once the success callback is invoked // It guarantees that the response is returned AND successful before trying to do anything with the expected data
-        }
-    })
-}
+// function getReverseGeocode(point, marker){
+//     $.ajax({
+//         url: `https://api.mapbox.com/geocoding/v5/mapbox.places/${point}.json?access_token=${mapboxgl.accessToken}`,
+//         success: function(data){
+//             marker.setPopup(getPopup(data.features[0].place_name)).togglePopup(); // This will only execute once the success callback is invoked // It guarantees that the response is returned AND successful before trying to do anything with the expected data
+//         }
+//     })
+// }

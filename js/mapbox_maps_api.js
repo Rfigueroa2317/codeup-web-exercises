@@ -1,6 +1,7 @@
 // 1. Generate a Mapbox API Key using the steps from above
 
-const mapboxToken = 'pk.eyJ1IjoicmZpZ3Vlcm9hMjMxNyIsImEiOiJja3BwbXgwMGIxNWQ5Mnd1ZWo3aTlxNjBkIn0.kqbbHqqF_z-Gss77NrYrBA';
+// MAPBOX_TOKEN;
+
 
 // 2. Create a new file named mapbox_maps_api.html and add a map using the next steps.
 
@@ -9,7 +10,7 @@ const mapboxToken = 'pk.eyJ1IjoicmZpZ3Vlcm9hMjMxNyIsImEiOiJja3BwbXgwMGIxNWQ5Mnd1
 
 // 3. Generate a map that shows the city with your favorite restaurant using geocoding.
 
-mapboxgl.accessToken = mapboxToken;
+mapboxgl.accessToken = MAPBOX_TOKEN;
 
 var map = new mapboxgl.Map({
     container: 'map',
