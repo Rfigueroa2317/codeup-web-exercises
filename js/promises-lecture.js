@@ -58,5 +58,4 @@ fetch('https://jsonplaceholder.typicode.com/posts/',{
      console.log('error: ' + err);
  });
 
-
-// chaining
+// TODO: using fetch(), make a simple GET request to this api: “https://dog.ceo/api/breeds/image/random” and append this image to the image element with an id of “random-dog-image”
