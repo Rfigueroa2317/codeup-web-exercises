@@ -16,11 +16,9 @@
 
     // Make a function named identity(input) that returns the input exactly as provided.
 
-
-
-
-
-
+        function identity(input){
+            return input;
+        }
 
     // Make a function named `isTrue(boolean)`
     //Which takes an input and returns true if that input's VALUE is true
